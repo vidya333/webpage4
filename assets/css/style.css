@@ -1,0 +1,85 @@
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+a{
+    text-decoration: none;color: #fff;}
+
+/* HEADER STARST */
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: #090931;
+    line-height: 50px;
+    color: #fff !important;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin-left: 110px;}
+.navbar ul li{
+    font-weight: 500;
+    margin: 0px 10px;}
+.navbar ul li a:hover{
+    color: orangered;}
+.navbar ul li img{
+    padding-top: 12px;}
+.ul2{
+    padding-left: 210px !important;}
+.ul2 img{
+    margin-top: 6px;}
+
+/* BANNER STARTS */
+.banner{
+    position: relative;}
+.banner .content1{
+    position: absolute;
+    top:110px;left:120px;
+    font-size: 0.6in;
+}
+.banner h6{
+    padding-top: 9px;}
+
+.banner .content2{
+    position: absolute;
+    top:480px;left:90px;
+}
+.banner .content2 {
+    background-color: #500a50;padding: 3px 12px;
+    padding-bottom: 12px;
+    margin-left: 80px;
+}
+.banner .content2 ul li:hover{
+    background-color: #f50152;
+ }
+.banner .content2 table tr td input[type="text"]{
+padding: 12px;
+}
+.banner .content2 table tr td input[type="date"]{
+padding: 10px;color: #8b8889;
+}
+.banner .content2 table tr td input[type="checkbox"]{
+   background-color: #500a50 !important;
+}
+.banner .content2 ul{
+    list-style: none;
+    display: flex;
+    color:#fff;
+}
+.banner .content2 ul li{
+   padding: 9px 19px;
+}
+.banner .content2 table .search{
+    background-color: #f50152;
+    color: white;border-radius: 50%;
+    padding:24px 9px;margin: 0px 6px;
+}
+.banner .content2 form{
+    padding: 0px !important;margin: 0px !important;
+}
+.banner .content2 table tr td{
+    color: #fff;
+}
+
