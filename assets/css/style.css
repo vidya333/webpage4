@@ -1,11 +1,10 @@
 *{
     padding: 0px;
-    margin:0px;
+    margin: 0px;
     box-sizing: border-box;
-    font-family:sans-serif;
+    font-family: sans-serif;
 }
-a{
-    text-decoration: none;color: #fff;}
+a{text-decoration: none;color: #fff;}
 
 /* HEADER STARST */
 .navbar{
@@ -18,7 +17,7 @@ a{
 .navbar ul{
     display: flex;
     list-style: none;
-    margin-left: 110px;}
+    margin-left: 136px;}
 .navbar ul li{
     font-weight: 500;
     margin: 0px 10px;}
@@ -27,27 +26,28 @@ a{
 .navbar ul li img{
     padding-top: 12px;}
 .ul2{
-    padding-left: 210px !important;}
+    padding-left: 140px !important;}
 .ul2 img{
     margin-top: 6px;}
 
 /* BANNER STARTS */
 .banner{
-    position: relative;}
+    width: 100% !important;
+    height: 600px !important;}
 .banner .content1{
     position: absolute;
-    top:110px;left:120px;
-    font-size: 0.6in;
+    top:166px;left:140px;
+    font-size: 50px;
 }
 .banner h6{
     padding-top: 9px;}
-
 .banner .content2{
     position: absolute;
-    top:480px;left:90px;
+    top:493px;left:93px;
 }
 .banner .content2 {
-    background-color: #500a50;padding: 3px 12px;
+    background-color: #500a50;
+    padding: 3px 12px;
     padding-bottom: 12px;
     margin-left: 80px;
 }
@@ -83,3 +83,86 @@ padding: 10px;color: #8b8889;
     color: #fff;
 }
 
+/* PART2 STARTS */
+
+.part2 p{position: absolute;top:36px;left:500px;font-size:24px;}
+.part2{position: absolute;top:700px;color:#fff}
+.part2 .block .block1{
+    width:140px;height: 140px;opacity: 76%;
+    margin:3px;background-color: black;
+    position: absolute;top:93px;left:190px;}
+.part2 .block .block2{
+    width:140px;height: 140px;opacity: 76%;
+    margin:3px;background-color: black;
+    position: absolute;top:93px;left:350px;}
+.part2 .block .block3{
+    width:140px;height: 140px;opacity: 76%;
+    margin:3px;background-color: black;
+    position: absolute;top:93px;left:510px;}
+.part2 .block .block4{
+    width:140px;height: 140px;opacity: 76%;
+    margin:3px;background-color: black;
+    position: absolute;top:93px;left:670px;}
+.part2 .block .block5{
+    width:140px;height: 140px;opacity: 76%;
+    margin:3px;background-color: black;
+    position: absolute;top:93px;left:830px;}
+.part2 .block .block6{
+    width:140px;height: 140px;opacity: 76%;
+    margin:3px;background-color: black;
+    position: absolute;top:93px;left:990px;}
+.part2 .block .data{
+    text-align: center;line-height: 21px;
+    padding-top: 21px;font-size: 15px;
+} 
+.part2 .block i{
+    margin-bottom: 10px;
+}
+/* PART3 STARTS */
+.part3{position: absolute;top: 1003px;width:100%;color: #fff;}
+.part3 .d{position:absolute;top:106px;left:630px;font-size: 24px;}
+.part3 .d1{position: absolute;top:160px;left:580px;text-align: center;line-height: 20px;font-size: 17px;}
+.part3 .d2{position: absolute;top:220px;left:590px;}
+.part3 .data1 .d2 input[type="text"]{padding: 9px;background: transparent;border: 2px solid white;width: 500px;color: #fff;}
+.part3 .data1 .d2 ::placeholder{color: #fff;font-size: 16px;}
+.part3 .data1 button{padding: 11px 36px;}
+
+/* PART4 STARTS */
+.part4{height: 860px;background-color: #270427;position: absolute;top:1347px;color: #2e2c2c;}
+.part4 .datas p{position: absolute;top:24px;left: 500px;color: #fff;font-size: 24px;}
+.part4 table{position: absolute;top: 63px;left: 103px;width: auto;height: auto;border-spacing: 19px;}
+.part4 table td{background-color: #fff;padding: 6px 6px 10px 6px;}
+or{color: orange;}.put{width: 240px;padding: 6px 0px 6px 12px;}
+
+/* PART5 STARTS */
+.part5{background-color: #9b48ba;width: 100% ;height: 330px;position: absolute;top: 2207px;color: #fff;}
+.part5 img{width: 366px;position: absolute; top:0px;left: 983px;}
+.part5 .q1{position: absolute; font-size: 34px;top:55px;left: 120px;}
+.part5 .q2{position: absolute; font-size: 20px;top:101px;left: 120px;}
+.part5 hr{position: absolute;top: 136px;left: 120px;}
+.part5 table{position: absolute;top:160px;left: 116px;}
+.part5 table input[type="text"]{padding: 12px; width: 93%;}
+.part5 table input[type="date"]{padding: 11px;}
+.part5 table button{padding: 13px 20px;background-color: orange;border: 0px;}
+
+/* PART6 STARTSS */
+.part6{position: absolute;top: 2537px;background-color: rgb(240, 236, 233);padding: 30px 60px;color: #2e2c2c;}
+.part6 .b1{font-size: 24px;padding-bottom: 5px;text-align: center;}
+.part6 .b2{font-size: 17px;padding: 20px 200px !important;text-align: center;}
+.dd{display: flex;padding: 6px 36px;}
+.pp1{padding: 6px 20px;}
+.part6 hr{margin: 6px 20px;}
+.pp2{font-size: 20px;padding: 6px 20px;}
+.pp3{width:330px;padding: 6px 20px;}
+.part6 .dd img{width: 200px;height: 180px;}
+
+/* FOOTER STARTS */
+footer{position: absolute;top:2967px;background-color: black;font-size: 14px;}
+footer .list{position: absolute;top:30px;padding: 0px 100px;color: #fff;display: flex;}
+footer .list ul{list-style: none;padding-right: 100px;}
+.list ul li{padding: 3px;}
+g{color: #8b8889;}
+footer .end{position: absolute;top:300px;color: #fff;padding: 10px 100px;background-color: #000000;width: 100%;
+box-shadow: 0px -3px 6px 2px black;margin-top: 6px;height: auto;}
+.end ul{list-style: none;display: flex;font-size: 17px;}
+.end ul li{padding-top: 9px;padding-left: 14px;}
