@@ -11,7 +11,7 @@
     <!-- HEADER STARTS -->
     <div class="navbar" >
         <ul>
-            <li><img src="./assets/img/momondo.png" width="110px" ></li>
+            <li><img src="./assets/img/momondo.png" width="110px" class="logo"></li>
             <li><a href="javascript:void()">Flights</a></li>
             <li><a href="javascript:void()">Hotel</a></li>
             <li><a href="javascript:void()">Car Hire</a></li>
@@ -36,7 +36,7 @@
             <h6>&nbsp;&nbsp;- every single time</h4>
         </div>
         <div class="content2">
-            <table>
+            <table class="tac">
                 <tr>
                    <td colspan="5">
                     <ul>
@@ -75,51 +75,115 @@
                     Include nearly airports</td>
                 </tr>
             </table>
+            <div class="tab">
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <ul>
+                                <li style="background-color: #f50152 !important;">
+                                <i class="fa-solid fa-plane-departure" style="color: #ffffff;"></i> Flights</li>
+                                <li><i class="fa-solid fa-hotel" style="color: #ffffff;"></i> Hotels</li>
+                                <li><i class="fa-solid fa-car" style="color: #ffffff;"></i> Cars</li>
+                            </ul>
+                        </td>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" placeholder="Enter Origin City">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" placeholder="Enter Destination City">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1"><input type="date" placeholder="dd"></td>
+                            <td colspan="1"><input type="date" placeholder="dd"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" placeholder="Number of Pasangers">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button type="submit">save</button>
+                            </td>
+                        </tr>
+                        
+                    <tr>
+                        <td style="padding: 6px;" colspan="2">
+                            <input type="checkbox"> Direct Flights Only <br>
+                            <input type="checkbox"> Include nearly airports <br>
+                            Ticket type 
+                            <select style="background-color: #500a50;border: 0px;color: #ffffff;
+                            font-size: 16px;">
+                            <option selected> Return trip</option>
+                            </select> <br>
+                            Ticket class 
+                            <select style="background-color: #500a50;border: 0px;color: #ffffff;
+                            font-size: 16px;">
+                            <option selected>Economy</option>
+                            </select>
+                            </td>
+                    </tr>
+                    </tr>
+                    
+                </table>
+            </div>
         </div>
     </div>
     <!-- BANNER ENDS -->
      <!-- PART2 START -->
    <div class="part2">
-    <img src="./assets/img/desert.jpg" alt="">
+    <img src="./assets/img/desert.jpg" class="pa2">
     <p>SOME FUN WE COVERED</p>
         <div class="block">
+           <div class="line1">
             <div class="block1">
                 <div class="data">
-                    <i class="fa-solid fa-person-biking" style="color: #ffffff;font-size: 50px;margin-bottom: 9px;"></i><br>
+                    <i class="fa-solid fa-person-biking" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
                     <b>5670M</b> <br>CYCLING TRACK
                 </div>
             </div>
             <div class="block2">
                 <div class="data">
-                    <i class="fa-solid fa-location-dot" style="color: #ffffff;font-size: 50px;margin-bottom: 9px;"></i><br>
+                    <i class="fa-solid fa-location-dot" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
                     <b>5670M</b> <br>CYCLING TRACK
                 </div>
             </div>
-            <div class="block3">
-                <div class="data">
-                    <i class="fa-solid fa-person-walking" style="color: #ffffff;font-size: 50px;margin-bottom: 9px;"></i><br>
-                    <b>5670M</b> <br>CYCLING TRACK
+           </div>
+            <div class="line2">
+                <div class="block3">
+                    <div class="data">
+                        <i class="fa-solid fa-person-walking" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
+                        <b>5670M</b> <br>CYCLING TRACK
+                    </div>
+                </div>
+                <div class="block4">
+                    <div class="data">
+                        <i class="fa-solid fa-ship" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
+                        <b>5670M</b> <br>CYCLING TRACK
+                    </div>
                 </div>
             </div>
-            <div class="block4">
-                <div class="data">
-                    <i class="fa-solid fa-ship" style="color: #ffffff;font-size: 50px;margin-bottom: 9px;"></i><br>
-                    <b>5670M</b> <br>CYCLING TRACK
+            <div class="line3">
+                <div class="block5">
+                    <div class="data">
+                        <i class="fa-solid fa-mountain-sun" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
+                        <b>5670M</b> <br>CYCLING TRACK
+                    </div>
                 </div>
-            </div>
-            <div class="block5">
-                <div class="data">
-                    <i class="fa-solid fa-mountain-sun" style="color: #ffffff;font-size: 50px;margin-bottom: 9px;"></i><br>
-                    <b>5670M</b> <br>CYCLING TRACK
-                </div>
-            </div>
-            <div class="block6">
-                <div class="data">
-                    <i class="fa-solid fa-tree" style="color: #ffffff;font-size: 50px;margin-bottom: 9px;"></i><br>
-                    <b>5670M</b> <br>CYCLING TRACK
+                <div class="block6">
+                    <div class="data">
+                        <i class="fa-solid fa-tree" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
+                        <b>5670M</b> <br>CYCLING TRACK
+                    </div>
                 </div>
             </div>
         </div>
+   </div>
+  
    </div>
     <!-- PART2 END -->
     <!-- PART3 START -->
@@ -137,7 +201,7 @@
    </div>
     <!-- PART3 END -->
     <!-- PART4 START -->
-    <div class="part4" style="background-color: #500a50;width: 100%;">
+    <div class="part4" >
         <div class="datas">
             <p>POPULAR DESTINATIONS</p>
             <table>
@@ -210,7 +274,7 @@
                 <td><input type="text" placeholder="Travel Date"></td>
                 <td><input type="text" placeholder="Number of People"></td>
                 <td><input type="text" placeholder="Your Email"></td>
-                <td><button type="button">CALCULATE NOW</button></td>
+                <td><button type="submit">CALCULATE NOW</button></td>
             </tr>
         </table>
     </div>
@@ -226,7 +290,7 @@
         <span class="con">
             <p class="pp1">Feb 03, 2016</p>
             <p class="pp2">10 THINGS TODO BEFORE TRAVEL</p>
-            <hr style="width: 300px;color: #a72929;">
+            <hr style="width: 330px;color: #a72929;">
             <p class="pp3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolor qui sed doloremque quos reiciendis ut cupiditate esse placeat?</p>
         </span>
         <div class="dd2">
@@ -263,16 +327,16 @@
             </ul>
             <ul>
             <li style="font-size: 20px;">Top Countries</li><br>
-            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> London,<g>United Kingdom</g></li>
-            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> New York,<g>United States</g></li>
-            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Bankok,<g>Thailand</g></li>
-            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Coperbingham,<g>Denmark</g></li>
-            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Orlanto,<g>United States</g></li>
-            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Paris,<g>France</g></li>
-            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Dubai,<g>United Arab Emirates</g></li>
-            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Singapore,<g>Singapore</g></li>
-            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Istambul,<g>Turkey</g></li>
-            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Hong Kong,<g>Hong Kong</g></li>
+            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> London,<g> United Kingdom</g></li>
+            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> New York,<g> United States</g></li>
+            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Bankok,<g> Thailand</g></li>
+            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Coperbingham,<g> Denmark</g></li>
+            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Orlanto,<g> United States</g></li>
+            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Paris,<g> France</g></li>
+            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Dubai,<g> United Arab Emirates</g></li>
+            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Singapore,<g> Singapore</g></li>
+            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Istambul,<g> Turkey</g></li>
+            <li><i class="fa-solid fa-location-dot" style="color: #7e7f81;"></i><g> Flights to</g> Hong Kong,<g> Hong Kong</g></li>
             </ul>
             <ul>
                 <li style="font-size: 20px;">International Sites</li><br>
@@ -314,7 +378,7 @@
             </ul>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <g>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, deleniti 
-                minus consequuntur veniam- By Vidya Tandel.</g>
+                minus consequuntur Designed - By Vidya Tandel.</g>
         </div>
     </footer>
     <!-- FOOTER ENDS -->
