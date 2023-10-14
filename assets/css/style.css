@@ -62,7 +62,7 @@ a{text-decoration: none;color: #fff;}
     margin-left: 70px;
 }
 .banner .content2 ul li:hover{
-    background-color: #f50152;
+    background-color: #f50152 !important;
  }
 .banner .content2 table tr td input[type="text"]{
 padding: 12px;
@@ -96,6 +96,7 @@ padding: 10px;color: #8b8889;
     color: #fff;
 }
 .tab{display: none;}
+.content2 table tr .un{border-bottom: 0.2px dotted !important;}
 /* PART2 STARTS */
 .part2{
     background: url(../img/desert.jpg);
