@@ -256,11 +256,21 @@
         <hr style="width: 100px;color: #ffffff;">
         <table>
             <tr>
-                <td><input type="text" placeholder="Travel Purpose"></td>
+                <!-- <td><input type="text" placeholder="Travel Purpose"></td> -->
+                <td><select name="purpose" id="purpose" 
+                    style="color: gray;padding: 12px 13px;margin-right: 13px;width: 180px;">
+                    <option selected>Travel Purpose</option>
+                    <option value="Educational">Educational</option>
+                    <option value="Migarte">Migarte</option>
+                    <option value="Proffessional">Proffessional</option>
+                    <option value="Medical">Medical</option>
+                    <option value="Trip">Trip</option>
+                    <option value="Other">Other</option>
+                </select></td>
                 <td><input type="text" placeholder="Travel Date"></td>
                 <td><input type="text" placeholder="Number of People"></td>
                 <td><input type="text" placeholder="Your Email"></td>
-                <td><button type="submit">CALCULATE NOW</button></td>
+                <td><button type="submit"><b>CALCULATE NOW</b></button></td>
             </tr>
         </table>
     </div>

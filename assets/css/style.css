@@ -165,7 +165,7 @@ padding: 10px;color: #8b8889;
 
 /* PART4 STARTS */
 .part4{
-    width: 100%;
+    width: 100% !important;
     height: 860px;
     background-color: #2e062e;
     color: #2e2c2c;
