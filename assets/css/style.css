@@ -97,6 +97,7 @@ padding: 10px;color: #8b8889;
 }
 .tab{display: none;}
 .content2 table tr .un{border-bottom: 0.2px dotted !important;}
+.banner .content2 table tr td input .check{background-color: #500a50 !important;}
 /* PART2 STARTS */
 .part2{
     background: url(../img/desert.jpg);
@@ -177,18 +178,22 @@ padding: 10px;color: #8b8889;
     font-size: 24px;
     padding: 30px 0px 5px 0px;
     text-align: center;
+    
 }
 .part4 table{
-    text-align: center;
+    /* text-align: center; */
     width: auto;
     height: auto;
     border-spacing: 19px;
+    justify-content: center;
 }
 .part4 table td{
     background-color: #fff;
     padding: 6px 6px 10px 6px;
     text-align: left;
+    border-radius: 6px;
 }
+.part4 table td img{border-radius: 3px;}
 or{color: orange;}
 .put{
     width: 240px;
@@ -250,14 +255,15 @@ or{color: orange;}
 }
 .dd{
     display: flex;
-    padding: 3px 36px;
+    padding: 3px;
+    justify-content: center;
 }
 .pp1{padding: 6px 20px;}
 .part6 hr{margin: 6px 20px;}
 .pp2{font-size: 20px;padding: 6px 20px;}
 .pp3{width:330px;padding: 6px 20px;}
 .part6 .dd img{width: 190px;height: 180px;}
-
+/* .part6 .con hr{border: 2px solid #be5b37;} */
 /* FOOTER STARTS */
 footer{
     background:url(../img/Departure.jpg);
@@ -274,16 +280,18 @@ footer{
 footer .list ul{
     list-style: none;
     padding-right: 70px;
-    
 }
 .list ul li{padding: 3px;}
 g{color: #8b8889;}
 footer .end{
     width: 100%;
     color: #fff;
-    padding: 10px 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
     }
-footer .end .done{padding-left: 120px;}
+footer .text{padding-left: 0px;}
+footer .end .done{padding-left: 15px;}
 .end ul{
     list-style: none;
     display: flex;
