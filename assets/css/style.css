@@ -2,7 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 a{text-decoration: none;color: #fff;}
 
@@ -10,7 +10,7 @@ a{text-decoration: none;color: #fff;}
 .navbar{
     width: 100%;
     height: 50px;
-    background-color: #090931;
+    background-color: #161638;
     line-height: 50px;
     color: #fff !important;
 }
@@ -24,7 +24,7 @@ a{text-decoration: none;color: #fff;}
     margin: 0px 10px;
 }
 .navbar ul li a:hover{
-    color: orangered;
+    color: #d66a42;
 }
 .navbar ul li img{
     padding-top: 12px;
@@ -35,18 +35,23 @@ a{text-decoration: none;color: #fff;}
 .ul2 img{
     margin-top: 6px;
 }
-.or{color: orangered !important;}
+.or{color: #df7048 !important;}
 /* BANNER STARTS */
 .banner{
     width: 100% !important;
     height: 600px !important;
-    background: url(../img/banner2.jpeg);
+    background: linear-gradient(rgba(255, 255, 255, 0.05),rgba(255, 255, 255, 0.05)),
+    url(../img/wallpaperflare-cropped.jpg);
     background-size: 100% 100%;
 }
 .banner .content1{
     position: absolute;
-    top:166px;left:140px;
+    top:166px;left:153px;
     font-size: 50px;
+}
+.banner .content1 .slm , h6{
+    color: #131212;
+    font-weight: 100 !important;
 }
 .banner img{width: 100%;}
 .banner h6{
@@ -56,13 +61,13 @@ a{text-decoration: none;color: #fff;}
     top:477px;left:93px;
 }
 .banner .content2 {
-    background-color: #500a50;
+    background-color: hsl(300, 78%, 18%,0.9);
     padding: 3px 12px;
     padding-bottom: 12px;
     margin-left: 70px;
 }
 .banner .content2 ul li:hover{
-    background-color: #f50152 !important;
+    background-color: hsl(340, 99%, 48%) !important;
  }
 .banner .content2 table tr td input[type="text"]{
 padding: 12px;
@@ -82,7 +87,7 @@ padding: 10px;color: #8b8889;
    padding: 9px 19px;
 }
 .banner .content2 table .search{
-    background-color: #f50152;
+    background-color: hsl(340, 99%, 48%,0.9);
     color: white;
     border-radius: 50%;
     padding:24px 9px;
@@ -95,12 +100,19 @@ padding: 10px;color: #8b8889;
 .banner .content2 table tr td{
     color: #fff;
 }
-.tab{display: none;}
-.content2 table tr .un{border-bottom: 0.2px dotted !important;}
-.banner .content2 table tr td input .check{background-color: #500a50 !important;}
+.tab{
+    display: none;
+}
+.content2 table tr .un{
+    border-bottom: 0.2px dotted !important;
+}
+.banner .content2 table tr td input .check{
+    background-color: #500a50 !important;
+}
 /* PART2 STARTS */
 .part2{
-    background: url(../img/desert.jpg);
+    background: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),
+    url(../img/Arizona\ dessert\ mountainjpg.jpg);
     background-size: 100% 100%;
     width: 100%;
     height: 360px;
@@ -119,9 +131,9 @@ padding: 10px;color: #8b8889;
 .block b{line-height: 20px;}
 .block{
     width: 150px;
-    height: 140px;
-    background-color: #000000;
-    opacity: 76%;
+    height: 145px;
+    background-color: hsl(0, 0%, 0%,0.7);
+    /* opacity: 76%; */
     margin: 39px 15px 0px 15px;
     font-size: 13.5px;
     padding: 16px 0px 9px 0px;
@@ -129,7 +141,8 @@ padding: 10px;color: #8b8889;
 
 /* PART3 STARTS */
 .part3{
-    background: url(../img/aircraft.jpg);
+    background: linear-gradient(rgba(88, 51, 129, 0.6),rgba(88, 51, 129, 0.6)),
+    url(../img/air.jpg);
     background-size: 100% 100%;
     width: 100%;
     height: 360px;
@@ -162,13 +175,11 @@ padding: 10px;color: #8b8889;
 .part3 .data1 button{
     padding: 11px 36px;
 }
-
-
 /* PART4 STARTS */
 .part4{
     width: 100% !important;
     height: 860px;
-    background-color: #2e062e;
+    background-color: #33233d;
     color: #2e2c2c;
     padding: 0px 100px;
     justify-content: center;
@@ -184,16 +195,16 @@ padding: 10px;color: #8b8889;
     /* text-align: center; */
     width: auto;
     height: auto;
-    border-spacing: 19px;
+    border-spacing: 24px;
     justify-content: center;
 }
 .part4 table td{
     background-color: #fff;
-    padding: 6px 6px 10px 6px;
+    padding: 3px 3px 10px 3px;
     text-align: left;
-    border-radius: 6px;
+    border-radius: 3px;
 }
-.part4 table td img{border-radius: 3px;}
+.part4 table td img{border-radius: 2px;}
 or{color: orange;}
 .put{
     width: 240px;
@@ -201,13 +212,13 @@ or{color: orange;}
 }
 /* PART5 STARTS */
 .part5{
-    background-color: #6b2587;
+    background-color: #654dad;
     width: 100% ;
     height: 330px;
     color: #fff;
 }
 .part5 img{
-    width: 366px;
+    width: 365px;
     float: inline-end;
 }
 .part5 .q1{
@@ -263,7 +274,6 @@ or{color: orange;}
 .pp2{font-size: 20px;padding: 6px 20px;}
 .pp3{width:330px;padding: 6px 20px;}
 .part6 .dd img{width: 190px;height: 180px;}
-/* .part6 .con hr{border: 2px solid #be5b37;} */
 /* FOOTER STARTS */
 footer{
     background:url(../img/Departure.jpg);
