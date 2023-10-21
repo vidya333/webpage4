@@ -41,23 +41,31 @@
                     <ul>
                         <li style="background-color: #f50152 !important;">
                         <i class="fa-solid fa-plane-departure" style="color: #ffffff;"></i> Flights</li>
-                        <li style="background-color: #3b103b;">
+                        <li style="background-color: #4b1d4b;">
                         <i class="fa-solid fa-hotel" style="color: #ffffff;"></i> Hotels</li>
-                        <li  style="background-color: #3b103b ;">
+                        <li  style="background-color: #4b1d4b ;">
                         <i class="fa-solid fa-car" style="color: #ffffff;"></i> Cars</li>
                     </ul>
                    </td>
                 </tr>
                 <tr>
                     <form action="">
-                        <td class="input"><input type="text" placeholder="Enter Origin City">
+                        <td class="input">
+                            <input type="text" placeholder="Enter Origin City">
                             <i class="fa-solid fa-link" style="color: #9a9ca2;font-size: smaller;"></i>
                         </td>
-                        <td><input type="text" placeholder="Enter Destination City"></td>
-                        <td><input type="date" placeholder="dd"><input type="date" placeholder="dd"></td>
-                        <td><select name="purpose" id="purpose" 
+                        <td>
+                            <input type="text" placeholder="Enter Destination City" 
+                            style="width: 204px !important;">
+                        </td>
+                        <td>
+                            <input type="date" placeholder="dd">
+                            <input type="date" placeholder="dd">
+                        </td>
+                        <td>
+                            <select name="purpose" id="purpose" 
                             style="color: gray;padding: 13px 13px;
-                            margin-right: 13px;margin-left: 6px;">
+                            margin-right: 10px;margin-left: 6px;">
                                 <option selected>Passengers </option>
                                 <option value="Educational">1</option>
                                 <option value="Migarte">2</option>
@@ -72,7 +80,7 @@
                 <tr>
                    <td class="un" style="color: #aac1d6 !important;">
                       <i class="fa-solid fa-rotate" style="color: #ffffff;"></i>&nbsp;&nbsp;Trip type:
-                      <select style="background-color: #500a50;border: 0px;color: #aac1d6;font-size: 16px;">
+                      <select style="background-color: #5a245a;border: 0px;color: #aac1d6;font-size: 16px;">
                         <option selected> Return trip</option>
                         <option selected>One way trip</option>
                       </select>
@@ -80,13 +88,13 @@
                    <td class="un" style="color: #aac1d6 !important;">
                       <i class="fa-solid fa-ticket" style="color: #ffffff;transform: rotate(-45deg);"></i>
                        &nbsp;Ticket class:
-                       <select style="background-color: #500a50;border: 0px;color: #aac1d6;font-size: 16px;">
+                       <select style="background-color: #5a245a;border: 0px;color: #aac1d6;font-size: 16px;">
                             <option selected>Economy</option>
                             <option>Bussiness</option>
                             <option>First</option>
                         </select>
                    </td>
-                   <td colspan="2">&nbsp; &nbsp;&nbsp;
+                   <td colspan="2" class="un1">&nbsp; &nbsp;&nbsp;
                         <input type="checkbox" class="check">Direct Flights Only &nbsp;&nbsp;&nbsp;&nbsp;
                         <input type="checkbox" class="check">Include nearly airports
                     </td>

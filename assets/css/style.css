@@ -54,7 +54,9 @@ a{text-decoration: none;color: #fff;}
     color: #131212;
     font-weight: 100 !important;
 }
-.banner img{width: 100%;}
+.banner img{
+    width: 100%;
+}
 .banner h6{
     padding-top: 9px;
 }
@@ -73,9 +75,7 @@ a{text-decoration: none;color: #fff;}
 padding: 12px;width: 180px;
 }
 .banner .content2 table tr td input[type="date"]{
-padding: 12px;color: #8b8889;}
-.banner .content2 table tr td input[type="checkbox"]{
-   background-color: #500a50 !important;
+padding: 12px;color: #8b8889;
 }
 .banner .content2 ul{
     list-style: none;
@@ -83,30 +83,24 @@ padding: 12px;color: #8b8889;}
     color:#fff;
 }
 .banner .content2 ul li{
-   padding: 9px 19px;
+   padding: 12px 29px;
+   margin: 4px 0px;
 }
 .banner .content2 .search{
     background-color: hsl(340, 99%, 48%,0.9);
     color: white;
     border-radius: 50%;
-    padding:36px 21px;
-    margin-top: 14px;
+    padding:37px 22px;
+    margin-top: 24px;
 }
-.banner .content2 form{
-    padding: 0px !important;
-    margin: 0px !important;
+.un, .un1{
+    padding-top: 6px !important;
 }
 .banner .content2 table tr td{
     color: #fff;
 }
-.tab{
-    display: none;
-}
 .content2 table tr .un{
     border-bottom: 0.2px dotted !important;
-}
-.banner .content2 table tr td input .check{
-    background-color: #500a50 !important;
 }
 /* PART2 STARTS */
 .part2{
