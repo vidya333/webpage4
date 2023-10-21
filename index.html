@@ -37,7 +37,7 @@
         <div class="content2">
             <table class="tac">
                 <tr>
-                   <td colspan="5">
+                   <td colspan="6">
                     <ul>
                         <li style="background-color: #f50152 !important;">
                         <i class="fa-solid fa-plane-departure" style="color: #ffffff;"></i> Flights</li>
@@ -50,106 +50,51 @@
                 </tr>
                 <tr>
                     <form action="">
-                        <td class="input"><input type="text" placeholder="Enter Origin City &#127960;">
+                        <td class="input"><input type="text" placeholder="Enter Origin City">
                             <i class="fa-solid fa-link" style="color: #9a9ca2;font-size: smaller;"></i>
                         </td>
-                        <td><input type="text" placeholder="Enter Destination City &#127965;"></td>
+                        <td><input type="text" placeholder="Enter Destination City"></td>
                         <td><input type="date" placeholder="dd"><input type="date" placeholder="dd"></td>
                         <td><select name="purpose" id="purpose" 
-                            style="color: gray;padding: 12px 13px;margin-right: 13px;margin-left: 6px;">
-                            <option selected>Passengers </option>
-                            <option value="Educational">1</option>
-                            <option value="Migarte">2</option>
-                            <option value="Proffessional">3</option>
-                            <option value="Medical">4</option>
-                            <option value="Trip">5</option>
-                            <option value="Other">more</option>
-                        </select></td></td>
-                        <td><div class="search"><a href="javascript:void()">Search</a></div></td>
+                            style="color: gray;padding: 13px 13px;
+                            margin-right: 13px;margin-left: 6px;">
+                                <option selected>Passengers </option>
+                                <option value="Educational">1</option>
+                                <option value="Migarte">2</option>
+                                <option value="Proffessional">3</option>
+                                <option value="Medical">4</option>
+                                <option value="Trip">5</option>
+                                <option value="Other">more</option>
+                        </select>
+                        </td>
                     </form>
                 </tr>
                 <tr>
                    <td class="un" style="color: #aac1d6 !important;">
-                    <i class="fa-solid fa-rotate" style="color: #ffffff;"></i>&nbsp;&nbsp;Trip type:
-                    <select style="background-color: #500a50;border: 0px;color: #aac1d6;
-                    font-size: 16px;">
-                    <option selected> Return trip</option>
-                    <option selected>One way trip</option>
-                    </select></td>
+                      <i class="fa-solid fa-rotate" style="color: #ffffff;"></i>&nbsp;&nbsp;Trip type:
+                      <select style="background-color: #500a50;border: 0px;color: #aac1d6;font-size: 16px;">
+                        <option selected> Return trip</option>
+                        <option selected>One way trip</option>
+                      </select>
+                    </td>
                    <td class="un" style="color: #aac1d6 !important;">
-                    <i class="fa-solid fa-ticket" style="color: #ffffff;transform: rotate(-45deg);"></i>
-                    &nbsp;Ticket class:
-                    <select style="background-color: #500a50;border: 0px;color: #aac1d6;
-                    font-size: 16px;">
-                    <option selected>Economy</option>
-                    <option>Bussiness</option>
-                    <option>First</option>
-                    </select>
+                      <i class="fa-solid fa-ticket" style="color: #ffffff;transform: rotate(-45deg);"></i>
+                       &nbsp;Ticket class:
+                       <select style="background-color: #500a50;border: 0px;color: #aac1d6;font-size: 16px;">
+                            <option selected>Economy</option>
+                            <option>Bussiness</option>
+                            <option>First</option>
+                        </select>
                    </td>
                    <td colspan="2">&nbsp; &nbsp;&nbsp;
-                    <input type="checkbox" class="check">
-                    Direct Flights Only 
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="checkbox" class="check">
-                    Include nearly airports</td>
+                        <input type="checkbox" class="check">Direct Flights Only &nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="checkbox" class="check">Include nearly airports
+                    </td>
                 </tr>
             </table>
-            <div class="tab">
-                <table>
-                    <tr>
-                        <td colspan="2">
-                            <ul>
-                                <li style="background-color: #f50152 !important;">
-                                <i class="fa-solid fa-plane-departure" style="color: #ffffff;"></i> Flights</li>
-                                <li><i class="fa-solid fa-hotel" style="color: #ffffff;"></i> Hotels</li>
-                                <li><i class="fa-solid fa-car" style="color: #ffffff;"></i> Cars</li>
-                            </ul>
-                        </td>
-                        <tr>
-                            <td colspan="2">
-                                <input type="text" placeholder="Enter Origin City">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input type="text" placeholder="Enter Destination City">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="1"><input type="date" placeholder="dd"></td>
-                            <td colspan="1"><input type="date" placeholder="dd"></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <input type="text" placeholder="Number of Pasangers">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <button type="submit">save</button>
-                            </td>
-                        </tr>
-                        
-                    <tr>
-                        <td style="padding: 6px;" colspan="2">
-                            <input type="checkbox"> Direct Flights Only <br>
-                            <input type="checkbox"> Include nearly airports <br>
-                            Ticket type 
-                            <select style="background-color: #500a50;border: 0px;color: #ffffff;
-                            font-size: 16px;">
-                            <option selected> Return trip</option>
-                            </select> <br>
-                            Ticket class 
-                            <select style="background-color: #500a50;border: 0px;color: #ffffff;
-                            font-size: 16px;">
-                            <option selected>Economy</option>
-                            </select>
-                            </td>
-                    </tr>
-                    </tr>
-                    
-                </table>
-            </div>
+            <span>
+                <div class="search"><a href="javascript:void()">Search</a></div>
+            </span>
         </div>
     </div>
     <!-- BANNER ENDS -->
@@ -204,25 +149,25 @@
             <p>POPULAR DESTINATIONS</p>
             <table>
             <tr>
-                <td><img src="./assets/img/1.jpg" height="170px" width="250px"><br><br>
+                <td><img src="./assets/img/1.jpg" height="190px" width="270px"><br><br>
                 <div class="put">
                 <b><or>$999</or> Rome. Floence & Veince 9-Night Vacation w/Air</b><br><br>
                 This is the lowest price we've seen in four years for a nine-night  <br><br>
                 </div>
                 </td>
-                <td><img src="./assets/img/2.jpeg" height="170px" width="250px"><br><br>
+                <td><img src="./assets/img/2.jpeg" height="190px" width="270px"><br><br>
                 <div class="put">
                 <b><or>$1099</or> Austrelia:Sydeny & FIJ Vacation w/Air. <or> Save $550</or></b><br><br>
                 This is the lowest price we've seen in four years for a nine-night   <br><br>
                 </div>
                 </td>
-                <td><img src="./assets/img/3.jpg" height="170px" width="250px"><br><br>
+                <td><img src="./assets/img/3.jpg" height="190px" width="270px"><br><br>
                 <div class="put">
                     <b><or>$1099</or> Greek Islands 9-Night Vacation w/Air.<or> Save $1060</or></b><br><br>
                     This is the lowest price we've seen in four years for a nine-night   <br><br>
                 </div>
                 </td>
-                <td><img src="./assets/img/4.jpeg" height="170px" width="250px"><br><br>
+                <td><img src="./assets/img/4.jpeg" height="190px" width="270px"><br><br>
                 <div class="put">
                 <b><or>$899 </or>Ireland & Germany 6-Night Adventure w/Air.</b><br><br>
                 This is the lowest price we've seen in four years for a shine-night<br><br>
@@ -230,28 +175,28 @@
                 </td>
             </tr>
             <tr>
-                <td><img src="./assets/img/5.jpeg" height="170px" width="250px"><br><br>
+                <td><img src="./assets/img/5.jpeg" height="190px" width="270px"><br><br>
                     <div class="put">
                     <b><or>$1299 </or> Morocco 4-star Escorted Vacation w/Air<or> Save $1600</or></b><br><br>
-                    This is the lowest price we've seen in four years for a shine-night<br><br>  
+                    This is the lowest price we've seen in four years for a nine-night<br><br>  
                     </div>
                     </td>
-                    <td><img src="./assets/img/6.jpeg" height="170px" width="250px"><br><br>
+                    <td><img src="./assets/img/6.jpeg" height="190px" width="270px"><br><br>
                     <div class="put">
-                        <b><or>$639 </or>Cabo All-Inclusive Beach Getway w/Air<or> Save $250</or></b><br><br>
-                        This is the lowest price we've seen in four years for a shine-night<br><br> 
+                        <b><or>$639 </or>Cabo All - Inclusive Beach Getway w/Air<or> Save $250</or></b><br><br>
+                        This is the lowest price we have seen in four years for a nine-night.<br><br> 
                     </div>
                     </td>
-                    <td><img src="./assets/img/7.jpg" height="170px" width="250px"><br><br>
+                    <td><img src="./assets/img/7.jpg" height="190px" width="270px"><br><br>
                     <div class="put">
                     <b><or>$2299 </or>New Zealand: Multi-city Trip w/Tour & Car Restal.<or>Save $250</or></b><br><br>
-                    This is the lowest price we've seen in four years for a shine-night<br><br> 
+                    This is the lowest price we've seen in four years for a nine-night<br><br> 
                     </div>
                     </td>
-                    <td><img src="./assets/img/8.jpeg" height="170px" width="250px"><br><br>
+                    <td><img src="./assets/img/8.jpeg" height="190px" width="270px"><br><br>
                     <div class="put">
                     <b><or>$1942</or> & up Turkey 9-Night Trip w/Air. Guided tours & Hotels</b><br><br>
-                    This is the lowest price we've seen in four years for a shine-night<br><br>
+                    This is the lowest price we've seen in four years for a nine-night<br><br>
                     </div>
                     </td>
             </tr>
@@ -325,16 +270,16 @@
         <div class="list">
             <ul>
                 <li style="font-size: 20px;">Top Cities</li><br>
-                <li><i class="fa-solid fa-globe" style="color: #85878a;"></i><g> Flights to</g> Unites states</li>
-                <li><i class="fa-solid fa-globe" style="color: #85878a;"></i><g> Flights to</g> Unites Kingdom</li>
-                <li><i class="fa-solid fa-globe" style="color: #85878a;"></i><g> Flights to</g> Spain</li>
-                <li><i class="fa-solid fa-globe" style="color: #85878a;"></i><g> Flights to</g> Thailand</li>
-                <li><i class="fa-solid fa-globe" style="color: #85878a;"></i><g> Flights to</g> India</li>
-                <li><i class="fa-solid fa-globe" style="color: #85878a;"></i><g> Flights to</g> Italy</li>
-                <li><i class="fa-solid fa-globe" style="color: #85878a;"></i><g> Flights to</g> Germany</li>
-                <li><i class="fa-solid fa-globe" style="color: #85878a;"></i><g> Flights to</g> Denmark</li>
-                <li><i class="fa-solid fa-globe" style="color: #85878a;"></i><g> Flights to</g> France </li>
-                <li><i class="fa-solid fa-globe" style="color: #85878a;"></i><g> Flights to</g> Austrelia</li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i><g> Flights to</g> Unites states</li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i><g> Flights to</g> Unites Kingdom</li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i><g> Flights to</g> Spain</li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i><g> Flights to</g> Thailand</li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i><g> Flights to</g> India</li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i><g> Flights to</g> Italy</li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i><g> Flights to</g> Germany</li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i><g> Flights to</g> Denmark</li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i><g> Flights to</g> France </li>
+                <li><i class="fa-solid fa-earth-asia" style="color: #85878a;"></i><g> Flights to</g> Austrelia</li>
             </ul>
             <ul>
             <li style="font-size: 20px;">Top Countries</li><br>

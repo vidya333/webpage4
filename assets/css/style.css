@@ -1,11 +1,10 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&display=swap');*{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 a{text-decoration: none;color: #fff;}
-
 /* HEADER STARST */
 .navbar{
     width: 100%;
@@ -45,9 +44,11 @@ a{text-decoration: none;color: #fff;}
     background-size: 100% 100%;
 }
 .banner .content1{
-    position: absolute;
-    top:166px;left:153px;
     font-size: 50px;
+    width: 100%;
+    height: 420px;
+    padding-left: 170px;
+    padding-top: 130px;
 }
 .banner .content1 .slm , h6{
     color: #131212;
@@ -55,26 +56,24 @@ a{text-decoration: none;color: #fff;}
 }
 .banner img{width: 100%;}
 .banner h6{
-    padding-top: 9px;}
-.banner .content2{
-    position: absolute;
-    top:477px;left:93px;
+    padding-top: 9px;
 }
 .banner .content2 {
+    width: 960px;
     background-color: hsl(300, 78%, 18%,0.9);
-    padding: 3px 12px;
+    padding: 2px 6px;
     padding-bottom: 12px;
-    margin-left: 70px;
+    margin: 0px auto;
+    display: flex;
 }
 .banner .content2 ul li:hover{
     background-color: hsl(340, 99%, 48%) !important;
  }
 .banner .content2 table tr td input[type="text"]{
-padding: 12px;
+padding: 12px;width: 180px;
 }
 .banner .content2 table tr td input[type="date"]{
-padding: 10px;color: #8b8889;
-}
+padding: 12px;color: #8b8889;}
 .banner .content2 table tr td input[type="checkbox"]{
    background-color: #500a50 !important;
 }
@@ -86,12 +85,12 @@ padding: 10px;color: #8b8889;
 .banner .content2 ul li{
    padding: 9px 19px;
 }
-.banner .content2 table .search{
+.banner .content2 .search{
     background-color: hsl(340, 99%, 48%,0.9);
     color: white;
     border-radius: 50%;
-    padding:24px 9px;
-    margin: 0px 6px;
+    padding:36px 21px;
+    margin-top: 14px;
 }
 .banner .content2 form{
     padding: 0px !important;
@@ -120,6 +119,7 @@ padding: 10px;color: #8b8889;
     color: #fff;
     text-align: center;
     padding: 60px 100px;
+    
 }
 .part2 p{
     font-size:24px;
@@ -181,34 +181,36 @@ padding: 10px;color: #8b8889;
     height: 860px;
     background-color: #33233d;
     color: #2e2c2c;
-    padding: 0px 100px;
-    justify-content: center;
+    padding:  0px 70px;
+    justify-content: center !important;
 }
 .part4 .datas p{
     color: #fff;
     font-size: 24px;
     padding: 30px 0px 5px 0px;
     text-align: center;
-    
 }
 .part4 table{
-    /* text-align: center; */
     width: auto;
     height: auto;
-    border-spacing: 24px;
-    justify-content: center;
+    border-spacing: 20px ;
 }
 .part4 table td{
     background-color: #fff;
-    padding: 3px 3px 10px 3px;
+    padding: 3px 3px 6px 3px;
     text-align: left;
     border-radius: 3px;
+    vertical-align: top;
 }
-.part4 table td img{border-radius: 2px;}
-or{color: orange;}
+.part4 table td img{
+    border-radius: 2px;
+}
+or{
+    color: orange;
+}
 .put{
-    width: 240px;
-    padding: 6px 0px 6px 12px;
+    width: 247px;
+    padding: 6px 3px 6px 9px;
 }
 /* PART5 STARTS */
 .part5{
