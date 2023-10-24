@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- HEADER STARTS -->
-    <div class="navbar" >
+    <div class="navbar">
         <ul>
             <li><img src="./assets/img/momondo.png" width="110px" class="logo"></li>
             <li><a href="javascript:void()" class="or">Flights</a></li>
@@ -26,16 +26,30 @@
             </li>
         </ul>
     </div>
+    <div class="topnav">
+       <i class="fa-solid fa-bars" style="color: #fff;font-size: large;float:right;padding: 15px;"></i>
+       <ul class="dropdown" style="float: right;list-style: none;">
+        <li><img src="./assets/img/momondo.png" width="130px"style="padding: 0px;"></li>
+        <li><a href="/" style="color: orangered;background: #161638;padding: 15px 47px;"> Flights</a></li>
+        <li><a href="/" style="padding: 15px 52px;background: #161638;color: #fff;">Hotel</a></li>
+        <li><a href="/" style="padding: 15px 42px;background: #161638;color: #fff;">Car Hire</a></li>
+        <li><a href="/" style="padding: 15px 33px;background: #161638;color: #fff;">Trip Finder</a></li>
+        <li><a href="/" style="padding: 15px 33.5px;background: #161638;color: #fff;">Inspiration</a></li>
+        <li><a href="/" style="padding: 15px 10px;background: #161638;color: #fff;">
+            <img src="assets/img/american-flag.jpg" width="25px"> English(GBP)</a></li>
+        <li><a href="/" style="padding: 15px 49px;color: #7ee740;background: #161638;"><b>Log In</b></a></li>
+      </ul>
+    </div>
     <!-- HEADER ENDS -->
     <!-- BANNER STARTS -->
     <div class="banner" >
         <div class="content1">
-            <p style="font-size: 45px;">"The best place to find<br>
+            <p style="font-size: 45px;" class="cp1">"The best place to find<br>
                 &nbsp;&nbsp;the cheapest airfares"</p>
-            <p style="font-size: 36px;padding-top: 6px;">&nbsp;&nbsp;- every single time</p>
+            <p style="font-size: 36px;padding-top: 6px;" class="cp2">&nbsp;&nbsp;- every single time</p>
         </div>
         <div class="content2">
-            <table class="tac">
+            <table>
                 <tr>
                    <td colspan="6">
                     <ul>
@@ -51,18 +65,18 @@
                 <tr>
                     <form action="">
                         <td class="input">
-                            <input type="text" placeholder="Enter Origin City">
-                            <i class="fa-solid fa-link" style="color: #9a9ca2;font-size: smaller;"></i>
+                            <input type="text" placeholder="Enter Origin City" >
+                            <i class="fa-solid fa-link" style="color: #9a9ca2;font-size: smaller;" id="linker"></i>
                         </td>
-                        <td>
+                        <td class="input">
                             <input type="text" placeholder="Enter Destination City" 
-                            style="width: 204px !important;">
+                            style="width: 204px;" id="in">
                         </td>
-                        <td>
+                        <td class="date1">
                             <input type="date" placeholder="dd">
                             <input type="date" placeholder="dd">
-                        </td>
-                        <td>
+                        </td> 
+                        <td class="purpose1">
                             <select name="purpose" id="purpose" 
                             style="color: gray;padding: 13px 13px;
                             margin-right: 10px;margin-left: 6px;">
@@ -78,6 +92,33 @@
                     </form>
                 </tr>
                 <tr>
+                    <td class="date2" >
+                        <input type="date" placeholder="dd">
+                    </td>
+                    <td>
+                        <select name="purpose" id="purpose2" 
+                            style="color: gray;padding: 13px 44px;">
+                                <option selected>Passengers </option>
+                                <option value="Educational">1</option>
+                                <option value="Migarte">2</option>
+                                <option value="Proffessional">3</option>
+                                <option value="Medical">4</option>
+                                <option value="Trip">5</option>
+                                <option value="Other">more</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="date2" >
+                        <input type="date" placeholder="dd">
+                    </td>
+                    <td >
+                        <button type="submit" value="" class="search2"
+                        style="border: 0px;padding: 14px 0px;width: 180px;
+                        color: #363434;">Search</button>
+                    </td>
+                </tr>
+                <tr class="lastrow1">
                    <td class="un" style="color: #aac1d6 !important;">
                       <i class="fa-solid fa-rotate" style="color: #ffffff;"></i>&nbsp;&nbsp;Trip type:
                       <select style="background-color: #5a245a;border: 0px;color: #aac1d6;font-size: 16px;">
@@ -95,8 +136,30 @@
                         </select>
                    </td>
                    <td colspan="2" class="un1">&nbsp; &nbsp;&nbsp;
-                        <input type="checkbox" class="check">Direct Flights Only &nbsp;&nbsp;&nbsp;&nbsp;
-                        <input type="checkbox" class="check">Include nearly airports
+                    &#9634; Direct Flights Only &nbsp;&nbsp;&nbsp;&nbsp;
+                    &#9634; Include nearly airports
+                    </td>
+                </tr>
+        
+                <tr class="lastrow2">
+                    <td colspan="2">
+                        Trip type :
+                        <select style="background-color: transparent;border: 0px;color: #ffffff;font-size: 15px;">
+                          <option selected> Return trip</option>
+                          <option >One way trip</option>
+                        </select>
+                        Class :
+                        <select style="background-color: transparent;border: 0px;color: #fff;font-size: 15px;">
+                            <option selected>Economy</option>
+                            <option>Bussiness</option>
+                            <option>First</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="lastrow2">
+                    <td colspan="2">
+                        Direct Flights Only &#9634; &nbsp;
+                        Include nearly airports &#9634;
                     </td>
                 </tr>
             </table>
@@ -134,8 +197,37 @@
             <i class="fa-solid fa-tree" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
             <b>567 M</b> <br>JUNGLE DISTANCE
         </div>
+    </div> 
+    <div class="datas1">
+        <div class="block"><br>
+            <i class="fa-solid fa-person-biking" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
+                    <b>5670M</b> <br>CYCLING TRACK
+        </div>
+        <div class="block"><br>
+            <i class="fa-solid fa-route" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
+                    <b>480 M</b> <br>DISTANCE COVERED
+        </div>
+        <div class="block"><br>
+            <i class="fa-solid fa-person-hiking" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
+                        <b>5670M</b> <br>ALTITUDE HIKED
+        </div>
+    </div>
+    <div class="datas1">
+        <div class="block"><br>
+            <i class="fa-solid fa-sailboat" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
+            <b>180 M</b> <br>SAILING DISTANCE
+        </div>
+        <div class="block"><br>
+            <i class="fa-solid fa-mountain-sun" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
+            <b>570 DAYS</b> <br>SPEND ADVENTURE
+        </div>
+        <div class="block"><br>
+            <i class="fa-solid fa-tree" style="color: #ffffff;font-size: 44px;margin-bottom: 15px;"></i><br>
+            <b>567 M</b> <br>JUNGLE DISTANCE
+        </div>
     </div>
    </div>
+
   
     <!-- PART2 END -->
     <!-- PART3 START -->
@@ -157,59 +249,122 @@
             <p>POPULAR DESTINATIONS</p>
             <table>
             <tr>
-                <td><img src="./assets/img/1.jpg" height="190px" width="270px"><br><br>
-                <div class="put">
-                <b><or>$999</or> Rome. Floence & Veince 9-Night Vacation w/Air</b><br><br>
-                This is the lowest price we've seen in four years for a nine-night  <br><br>
-                </div>
+                <td>
+                    <img src="./assets/img/1.jpg" height="190px" width="270px"><br><br>
+                    <div class="put">
+                        <b><or>$999</or> Rome. Floence & Veince 9-Night Vacation w/Air</b><br><br>
+                        This is the lowest price we've seen in four years for a nine-night  <br><br>
+                     </div>
                 </td>
-                <td><img src="./assets/img/2.jpeg" height="190px" width="270px"><br><br>
-                <div class="put">
-                <b><or>$1099</or> Austrelia:Sydeny & FIJ Vacation w/Air. <or> Save $550</or></b><br><br>
-                This is the lowest price we've seen in four years for a nine-night   <br><br>
-                </div>
+                <td>
+                    <img src="./assets/img/2.jpeg" height="190px" width="270px"><br><br>
+                    <div class="put">
+                        <b><or>$1099</or> Austrelia:Sydeny & FIJ Vacation w/Air. <or> Save $550</or></b><br><br>
+                        This is the lowest price we've seen in four years for a nine-night   <br><br>
+                    </div>
                 </td>
-                <td><img src="./assets/img/3.jpg" height="190px" width="270px"><br><br>
-                <div class="put">
-                    <b><or>$1099</or> Greek Islands 9-Night Vacation w/Air.<or> Save $1060</or></b><br><br>
-                    This is the lowest price we've seen in four years for a nine-night   <br><br>
-                </div>
+                <td>
+                    <img src="./assets/img/3.jpg" height="190px" width="270px"><br><br>
+                    <div class="put">
+                        <b><or>$1099</or> Greek Islands 9-Night Vacation w/Air.<or> Save $1060</or></b><br><br>
+                        This is the lowest price we've seen in four years for a nine-night   <br><br>
+                    </div>
                 </td>
-                <td><img src="./assets/img/4.jpeg" height="190px" width="270px"><br><br>
-                <div class="put">
-                <b><or>$899 </or>Ireland & Germany 6-Night Adventure w/Air.</b><br><br>
-                This is the lowest price we've seen in four years for a shine-night<br><br>
-                </div>
+                <td>
+                    <img src="./assets/img/4.jpeg" height="190px" width="270px"><br><br>
+                    <div class="put">
+                        <b><or>$899 </or>Ireland & Germany 6-Night Adventure w/Air.</b><br><br>
+                        This is the lowest price we've seen in four years for a shine-night<br><br>
+                    </div>
                 </td>
             </tr>
             <tr>
-                <td><img src="./assets/img/5.jpeg" height="190px" width="270px"><br><br>
+                <td>
+                    <img src="./assets/img/5.jpeg" height="190px" width="270px"><br><br>
                     <div class="put">
-                    <b><or>$1299 </or> Morocco 4-star Escorted Vacation w/Air<or> Save $1600</or></b><br><br>
-                    This is the lowest price we've seen in four years for a nine-night<br><br>  
+                        <b><or>$1299 </or> Morocco 4-star Escorted Vacation w/Air<or> Save $1600</or></b><br><br>
+                        This is the lowest price we've seen in four years for a nine-night<br><br>  
                     </div>
-                    </td>
-                    <td><img src="./assets/img/6.jpeg" height="190px" width="270px"><br><br>
+                </td>
+                <td>
+                    <img src="./assets/img/6.jpeg" height="190px" width="270px"><br><br>
                     <div class="put">
                         <b><or>$639 </or>Cabo All - Inclusive Beach Getway w/Air<or> Save $250</or></b><br><br>
                         This is the lowest price we have seen in four years for a nine-night.<br><br> 
                     </div>
-                    </td>
-                    <td><img src="./assets/img/7.jpg" height="190px" width="270px"><br><br>
+                </td>
+                <td>
+                    <img src="./assets/img/7.jpg" height="190px" width="270px"><br><br>
                     <div class="put">
-                    <b><or>$2299 </or>New Zealand: Multi-city Trip w/Tour & Car Restal.<or>Save $250</or></b><br><br>
-                    This is the lowest price we've seen in four years for a nine-night<br><br> 
+                        <b><or>$2299 </or>New Zealand: Multi-city Trip w/Tour & Car Restal.<or>Save $250</or></b><br><br>
+                        This is the lowest price we've seen in four years for a nine-night<br><br> 
                     </div>
-                    </td>
-                    <td><img src="./assets/img/8.jpeg" height="190px" width="270px"><br><br>
+                </td>
+                <td>
+                    <img src="./assets/img/8.jpeg" height="190px" width="270px"><br><br>
                     <div class="put">
-                    <b><or>$1942</or> & up Turkey 9-Night Trip w/Air. Guided tours & Hotels</b><br><br>
-                    This is the lowest price we've seen in four years for a nine-night<br><br>
+                        <b><or>$1942</or> & up Turkey 9-Night Trip w/Air. Guided tours & Hotels</b><br><br>
+                        This is the lowest price we've seen in four years for a nine-night<br><br>
                     </div>
-                    </td>
+                </td>
             </tr>
             </table>
         </div>
+        <marquee  scrollamount="9" loop="infinite" class="marquee" onmouseover="this.stop();" onmouseout="this.start();">
+            <table>
+                <tr>
+                    <td><img src="./assets/img/1.jpg" height="190px" width="270px"><br><br>
+                    <div class="put">
+                    <b><or>$999</or> Rome. Floence & Veince 9-Night Vacation w/Air</b><br><br>
+                    This is the lowest price we've seen in four years for a nine-night  <br><br>
+                    </div>
+                    </td>
+                    <td><img src="./assets/img/2.jpeg" height="190px" width="270px"><br><br>
+                    <div class="put">
+                    <b><or>$1099</or> Austrelia:Sydeny & FIJ Vacation w/Air. <or> Save $550</or></b><br><br>
+                    This is the lowest price we've seen in four years for a nine-night   <br><br>
+                    </div>
+                    </td>
+                    <td><img src="./assets/img/3.jpg" height="190px" width="270px"><br><br>
+                    <div class="put">
+                        <b><or>$1099</or> Greek Islands 9-Night Vacation w/Air.<or> Save $1060</or></b><br><br>
+                        This is the lowest price we've seen in four years for a nine-night   <br><br>
+                    </div>
+                    </td>
+                    <td><img src="./assets/img/4.jpeg" height="190px" width="270px"><br><br>
+                    <div class="put">
+                    <b><or>$899 </or>Ireland & Germany 6-Night Adventure w/Air.</b><br><br>
+                    This is the lowest price we've seen in four years for a shine-night<br><br>
+                    </div>
+                    </td>
+                
+                    <td><img src="./assets/img/5.jpeg" height="190px" width="270px"><br><br>
+                        <div class="put">
+                        <b><or>$1299 </or> Morocco 4-star Escorted Vacation w/Air<or> Save $1600</or></b><br><br>
+                        This is the lowest price we've seen in four years for a nine-night<br><br>  
+                        </div>
+                        </td>
+                        <td><img src="./assets/img/6.jpeg" height="190px" width="270px"><br><br>
+                        <div class="put">
+                            <b><or>$639 </or>Cabo All - Inclusive Beach Getway w/Air<or> Save $250</or></b><br><br>
+                            This is the lowest price we have seen in four years for a nine-night.<br><br> 
+                        </div>
+                        </td>
+                        <td><img src="./assets/img/7.jpg" height="190px" width="270px"><br><br>
+                        <div class="put">
+                        <b><or>$2299 </or>New Zealand: Multi-city Trip w/Tour & Car Restal.<or>Save $250</or></b><br><br>
+                        This is the lowest price we've seen in four years for a nine-night<br><br> 
+                        </div>
+                        </td>
+                        <td><img src="./assets/img/8.jpeg" height="190px" width="270px"><br><br>
+                        <div class="put">
+                        <b><or>$1942</or> & up Turkey 9-Night Trip w/Air. Guided tours & Hotels</b><br><br>
+                        This is the lowest price we've seen in four years for a nine-night<br><br>
+                        </div>
+                        </td>
+                </tr>
+</table>
+        </marquee>
     </div>
     <!-- PART4 END -->
 
@@ -349,6 +504,16 @@
         </div>
     </footer>
     <!-- FOOTER ENDS -->
+    <script>
+        $(function() {
+    $('marquee').mouseover(function() {
+        $(this).attr('scrollamount',0);
+    }).mouseout(function() {
+         $(this).attr('scrollamount',5);
+    });
+});
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
 </body>
 </html>

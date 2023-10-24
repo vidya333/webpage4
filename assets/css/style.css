@@ -3,8 +3,11 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    transition:all 0.5s ease-in-out;
 }
-a{text-decoration: none;color: #fff;}
+a{
+    text-decoration: none;
+}
 /* HEADER STARST */
 .navbar{
     width: 100%;
@@ -13,6 +16,7 @@ a{text-decoration: none;color: #fff;}
     line-height: 50px;
     color: #fff !important;
 }
+.topnav{display: none;}
 .navbar ul{
     display: flex;
     list-style: none;
@@ -22,6 +26,7 @@ a{text-decoration: none;color: #fff;}
     font-weight: 500;
     margin: 0px 10px;
 }
+.navbar ul li a{color: #fff;}
 .navbar ul li a:hover{
     color: #d66a42;
 }
@@ -62,7 +67,7 @@ a{text-decoration: none;color: #fff;}
 }
 .banner .content2 {
     width: 960px;
-    background-color: hsl(300, 78%, 18%,0.9);
+    background-color: hsl(300, 78%, 18%,0.83);
     padding: 2px 6px;
     padding-bottom: 12px;
     margin: 0px auto;
@@ -87,12 +92,12 @@ padding: 12px;color: #8b8889;
    margin: 4px 0px;
 }
 .banner .content2 .search{
-    background-color: hsl(340, 99%, 48%,0.9);
-    color: white;
+    background-color: hsl(340, 99%, 48%,0.9) !important;
     border-radius: 50%;
     padding:37px 22px;
     margin-top: 24px;
 }
+.banner .content2 .search a{color: #fff;}
 .un, .un1{
     padding-top: 6px !important;
 }
@@ -104,7 +109,7 @@ padding: 12px;color: #8b8889;
 }
 /* PART2 STARTS */
 .part2{
-    background: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),
+    background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),
     url(../img/Arizona\ dessert\ mountainjpg.jpg);
     background-size: 100% 100%;
     width: 100%;
@@ -127,7 +132,6 @@ padding: 12px;color: #8b8889;
     width: 150px;
     height: 145px;
     background-color: hsl(0, 0%, 0%,0.7);
-    /* opacity: 76%; */
     margin: 39px 15px 0px 15px;
     font-size: 13.5px;
     padding: 16px 0px 9px 0px;
@@ -308,76 +312,132 @@ footer .end .done{padding-left: 15px;}
     padding-top: 9px;
     padding-left: 14px;
 } 
+
+
 /* RESPONSIVE DIMENTIONS */
 @media screen and (max-width:991px){
+    
     .navbar{
-        height: auto;
-        line-height: normal;
-        text-align: start;
+        display: none;
+    }
+    .topnav {
+        display: block;
+        height: 50px;
+        background-color: #161638;
         width: 100%;
-        padding-left: 30px;
-        padding-bottom: 30px;
+        line-height: 50px;
     }
-    .navbar .logo{
-        width: 260px !important;
+    .dropdown{
+        display: none;
     }
-    .navbar ul{
-        display: inline-block;
-        margin-left:0px !important;
+    .topnav:hover .dropdown{
+        display: block !important;    
     }
-    .navbar ul li{
-        margin: 0px 0px !important;
-    }
-    .navbar .ul2{
-        padding-left: 0px !important;
-        position: absolute;top: 66px;
-        left: 160px;
-    }
-    .banner{
-        width: 100% !important;
-        height: auto !important;
+    .topnav .dropdown li a:hover{
+        background: #654dad !important;
     }
     .banner .content1{
-        position: absolute;
-        top:210px;left: 10px;
-        font-size: 36px;
-    }
-    .banner .content2{
-        position: absolute;
-        top:336px;left:10px ;
-        margin-left: 0px !important;
-        height: auto;width: 310px !important;
-        padding: 9px 6px !important;
-        padding-bottom: 10px !important;
-    }
-    .tac{display: none;}
-    .banner .content2 ul{
-        display: flex;
-        text-align: center;
+        padding-left: 30px;
+        padding-top: 50px;
         width: 100%;
-        font-size: 15px;
-    }
-    .banner .content2 .tab {
+        height: 210px;
         display: block;
     }
-    .banner .content2 .tab tr td{
-        padding-left: 0px;}
-    .banner .content2 table tr td input[type="text"]{
-     padding: 12px;width: 100% !important;
+    .banner .content1 .cp1,.cp2{
+        font-size: 34px !important;
     }
-    .banner .content2 table tr td input[type="date"]{
-        padding: 10px 12px;width: 100% !important;
-       }
-    .banner .content2 table tr td button{
-        width: 100%;padding: 10px 0px;
-        background-color: #f50152;
-        color: #fff;font-size: 17px;
+    .banner .content2 {
+        margin-top: 12px;
+        width:380px !important ;
+        background-color: hsl(300, 78%, 18%,0.5);
+        display: flex;
     }
-    .banner img{
-        width: 100% !important;
-        height: 600px;
+    .banner .content2:hover{
+        background-color: hsla(283, 78%, 18%, 0.7);
     }
-    
-
+    #linker,.date1,.purpose1{
+        display: none;
+    }
+    .date2{
+        display: flex !important;
+    }
+    #purpose2{
+        display: inline !important;
+    }
+    .search2{
+        display: inline !important;
+    }
+    .search2:hover{
+        background: #f50152;
+        color: #fff !important;
+    }
+    .lastrow2{
+       display: inline !important;}
+    .banner .content2 table tr td input{
+        width: 180px !important;
+    }
+    .search,.lastrow1{
+        display: none;
+    }
+    .banner .content2 {
+       float: left;
+       margin-left: 30px;
+    }
+    .part2{
+        background: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.1)),url(../img/road.jpg);
+        width: 100%;
+        background-size: 100% 100%;
+        height: auto;
+        padding: 30px 0px !important;
+    }
+    .part2 .datas{
+        display: none;
+    }
+    .part2 .datas1{
+        display: flex;
+        justify-content: center;
+    }
+    .part2 .datas1 .block{
+        border-radius: 9px;
+        margin: 15px !important;
+    }
+    .part2 .datas1 .block:hover{
+        background-color: hsl(255, 38%, 49%,0.5);
+    }
+    .part3{
+        width: 100%;
+        height: 250px;
+        text-align: center;
+    }
+    .part3 .d,.d1,.d2{
+        padding: 15px 0px !important;
+        float: none !important;
+    }
+    .part3 .d1{text-align: center;}
+    .part4{
+        height: auto;
+        width: 100%;
+        padding: 0px 0px;}
+    .part4 .datas{display: none;}
+    .part4 .marquee{
+        display: flex;
+        width: 100%;
+        }
+    .part4 table{
+        width: auto;
+        height: auto;
+        border-spacing: 30px ;
+    }
+    .part4 table td{
+        background-color: hsla(0, 0%, 100%,0.9);
+        padding: 3px 3px 6px 3px;
+        text-align: left;
+        border-radius: 3px;
+        vertical-align: top;
+        text-wrap: wrap;
+        color: #1b1a1a;
+    }
    
 }
+.date2,#purpose2,.search2{display: none;}
+.lastrow2,.datas1,.marquee{display: none;}
