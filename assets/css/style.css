@@ -35,6 +35,7 @@ a{
 }
 .ul2{
     padding-left: 140px !important;
+    cursor: pointer;
 }
 .ul2 img{
     margin-top: 6px;
@@ -73,8 +74,10 @@ a{
     margin: 0px auto;
     display: flex;
 }
+
 .banner .content2 ul li:hover{
     background-color: hsl(340, 99%, 48%) !important;
+    cursor: pointer;
  }
 .banner .content2 table tr td input[type="text"]{
 padding: 12px;width: 180px;
@@ -96,6 +99,10 @@ padding: 12px;color: #8b8889;
     border-radius: 50%;
     padding:37px 22px;
     margin-top: 24px;
+    cursor: pointer;
+}
+.banner .content2 .search:hover{
+    background-color: hsl(255, 38%, 49%,0.7) !important;
 }
 .banner .content2 .search a{color: #fff;}
 .un, .un1{
@@ -126,6 +133,7 @@ padding: 12px;color: #8b8889;
 .part2 .datas{
     display: flex;
     justify-content: center;
+    
 }
 .block b{line-height: 20px;}
 .block{
@@ -135,7 +143,10 @@ padding: 12px;color: #8b8889;
     margin: 39px 15px 0px 15px;
     font-size: 13.5px;
     padding: 16px 0px 9px 0px;
+    cursor: pointer;
+    border-radius: 6px;
 }
+.part2 .datas :hover{background: hsl(255, 38%, 49%,0.6);}
 
 /* PART3 STARTS */
 .part3{
@@ -172,6 +183,12 @@ padding: 12px;color: #8b8889;
 }
 .part3 .data1 button{
     padding: 11px 36px;
+    border: 2px solid #fff;
+}
+.part3 .data1 button:hover{
+    background: #654dad;
+    color: #fff;
+    border: 2px solid #654dad;
 }
 /* PART4 STARTS */
 .part4{
@@ -199,6 +216,10 @@ padding: 12px;color: #8b8889;
     text-align: left;
     border-radius: 3px;
     vertical-align: top;
+    cursor: pointer;
+}
+.part4 table td:hover{
+    background-color: hsl(0, 0%, 100%,0.3);
 }
 .part4 table td img{
     border-radius: 2px;
@@ -331,10 +352,14 @@ footer .end .done{padding-left: 15px;}
         display: none;
     }
     .topnav:hover .dropdown{
-        display: block !important;    
+        display: block !important;   
     }
     .topnav .dropdown li a:hover{
         background: #654dad !important;
+    }
+    .banner{
+        background: linear-gradient(hsla(133, 52%, 34%, 0.2),rgba(55, 34, 75, 0.5)),url(../img/banner3.gif);
+        background-size: 100% 100%;
     }
     .banner .content1{
         padding-left: 30px;
@@ -384,7 +409,7 @@ footer .end .done{padding-left: 15px;}
        margin-left: 30px;
     }
     .part2{
-        background: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.1)),url(../img/road.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.7),rgb(0,0,0,0.1)),url(../img/road2.jpg);
         width: 100%;
         background-size: 100% 100%;
         height: auto;
@@ -406,30 +431,77 @@ footer .end .done{padding-left: 15px;}
     }
     .part3{
         width: 100%;
-        height: 250px;
-        text-align: center;
+        height: auto;
+        text-align: center !important;
+        
     }
-    .part3 .d,.d1,.d2{
-        padding: 15px 0px !important;
-        float: none !important;
+    .part3 .data1 {display: none;}
+    .part3 .data2{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
     }
-    .part3 .d1{text-align: center;}
+    .part3 .data2 .d{
+        font-size: 16px;
+        padding: 15px;
+        float: none;
+        letter-spacing: 2px;
+    }
+    .part3 .d1{
+        font-size: 16px;
+        padding: 15px;
+        float: none;
+        width: 250px;
+        line-height: 21px;
+        letter-spacing: 1px;
+    }
+    .part3 .d input[type="text"]{
+        padding: 6px;
+        margin: 6px 0px;
+        margin-top: 25px;
+        background: transparent;
+        border: 2px solid white;
+        width: 100%;
+        color: #fff;
+        font-size: 14px;
+        opacity: 85%;
+    }
+    .part3 .d ::placeholder{
+        color: #fff;
+        font-size: 14px;
+    }
+    .part3 .d button{
+        width: 100%;
+        padding: 6px;
+        border: 2px solid #fff;
+        opacity: 95%;
+        margin: 6px 0px;
+    }
+    .part3 .d button:hover{
+        background-color: #654dad;
+        border: 2px solid #654dad;
+        color: #fff;
+    }
     .part4{
         height: auto;
         width: 100%;
-        padding: 0px 0px;}
+        padding: 0px 0px;
+        background:#33233d;
+        background-size: 150% 100%;}
     .part4 .datas{display: none;}
     .part4 .marquee{
         display: flex;
         width: 100%;
+        cursor: pointer;
         }
+   
     .part4 table{
         width: auto;
         height: auto;
-        border-spacing: 30px ;
+        border-spacing: 36px ;
     }
     .part4 table td{
-        background-color: hsla(0, 0%, 100%,0.9);
+        background-color: #ffffff;
         padding: 3px 3px 6px 3px;
         text-align: left;
         border-radius: 3px;
@@ -437,7 +509,86 @@ footer .end .done{padding-left: 15px;}
         text-wrap: wrap;
         color: #1b1a1a;
     }
-   
+   .part5{
+    display: none;
+   }
+   .part5a{
+    display: block !important;
+    width: 100%;
+    height: auto;
+    background-color: #654dad;
+    padding-bottom: 30px;
+    text-align: center;   
+ }
+    .part5a .container {
+        text-align: center;
+        color: #fff;
+        font-size: 19px;
+        letter-spacing: 1px;
+        padding: 24px 0px;
+        
+    }
+    .part5a table{
+        width: 100%;
+        padding: 0px 26px;  
+    }
+    .part5a table td input{
+        padding: 12px 0px;
+        width: 60%;
+        border:none;
+        margin:3px 0px;
+    }
+    .part5a table td select{
+        width: 60% !important;
+    }
+    .part5a table td button{
+        padding: 12px 0px;
+        border: none;
+        width: 60%;
+        background-color: orange;
+        margin-top: 2px;
+    }
+    .part5a table td button:hover{
+       cursor: pointer; 
+       color: #fff;  }
+ .part6,footer{display: none;}  
 }
-.date2,#purpose2,.search2{display: none;}
-.lastrow2,.datas1,.marquee{display: none;}
+
+@media screen and (max-width:550px){
+    .part2{
+        background:linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url(../img/road.jpg);
+        width: 100%;
+        background-size: 100% 100%;
+        height: auto;
+        padding: 30px 0px !important;
+    }
+    .part5a table td select{
+        width: 100% !important;
+    }
+    .part5a table td input{
+        padding: 12px 0px;
+        width: 100%;
+        border:none;
+        margin:3px 0px;
+    }
+    .part5a table td button{
+        padding: 12px 0px;
+        border: none;
+        width: 100%;
+        background-color: orange;
+        margin-top: 2px;
+    }
+}
+@media screen and (max-width:600px){
+
+    .part3 .d1{
+        font-size: 14.5px;
+        padding: 15px;
+        float: none;
+        width: 250px;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+}
+.date2,#purpose2,.search2,.part5a{display: none;}
+.lastrow2,.datas1,.marquee,.data2{display: none;}
