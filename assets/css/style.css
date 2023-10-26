@@ -421,9 +421,9 @@ footer .end .done{padding-left: 15px;}
     .part2 .datas{
         display: grid;
         grid-template-columns: auto auto auto;
-        gap:10px;
+        gap:6px !important;
     }
-   
+ .block{margin: 30px 12px 0px 12px !important;}
     .part3{
         width: 100%;
         height: auto;
@@ -444,7 +444,7 @@ footer .end .done{padding-left: 15px;}
     }
     .part3 .d1{
         font-size: 16px;
-        padding: 15px;
+        padding: 10px;
         float: none;
         width: 250px;
         line-height: 21px;
@@ -558,9 +558,12 @@ footer .end .done{padding-left: 15px;}
     .part6 .dd{
         padding: 12px 0px;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: auto auto;
         grid-template-rows: 2;
-        row-gap: 15px;
+        gap: 15px;
+    }
+    .part6 hr {
+        margin: 6px 0px !important;
     }
     .part6 .dd .dd1{
         grid-row-start: 1;
@@ -654,7 +657,22 @@ footer .end .done{padding-left: 15px;}
 
 
 
+@media screen and (max-width:600px){
 
+    .part3 .d1{
+        font-size: 16px;
+        padding: 3px;
+        float: none;
+        width: 250px;
+        line-height: normal;
+        letter-spacing: normal;
+    }
+    .pp2{font-size: 16px;}
+    .pp3{
+        font-size: 15px;
+        width: 270px;
+    }
+}
 @media screen and (max-width:550px){
     .part2{
         background:linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url(../img/road.jpg);
@@ -667,6 +685,14 @@ footer .end .done{padding-left: 15px;}
         display: grid;
         grid-template-columns: auto  auto;
         gap:10px;
+    }
+    .part3 .d1{
+        font-size: 15.5px !important;
+        padding: 3px;
+        float: none;
+        width: 250px;
+        line-height: normal;
+        letter-spacing: normal;
     }
     .part5a table td select{
         width: 100% !important;
@@ -689,21 +715,20 @@ footer .end .done{padding-left: 15px;}
         font-size: 13px;
     }
 }
-@media screen and (max-width:600px){
-
+@media screen and (max-width:460px) {
     .part3 .d1{
-        font-size: 14.5px;
-        padding: 15px;
-        float: none;
-        width: 250px;
-        line-height: normal;
-        letter-spacing: normal;
+        font-size: 14.5px !important;
     }
-    .pp2{font-size: 16px;}
-    .pp3{
-        font-size: 15px;
-        width: 270px;
+    .part6 .dd .dd1 img{width: 180px !important;height: 170px !important;}
+    .part6 .dd .dd2 img{width: 180px !important;height: 170px !important;}
+
+}
+@media screen and (max-width:394px) {
+    .part3 .d1{
+        font-size: 14px !important;
     }
 }
+
+
 .date2,#purpose2,.search2,.part5a{display: none;}
 .lastrow2,.datas1,.marquee,.data2{display: none;}
