@@ -486,12 +486,12 @@ footer .end .done{padding-left: 15px;}
     .part4 .datas{display: none;}
     .part4 .marquee{
         display: flex;
-        width: 100%;
+        width: 100% !important;
         cursor: pointer;
         }
    
     .part4 table{
-        width: auto;
+        width: 100%;
         height: auto;
         border-spacing: 36px ;
     }
@@ -558,21 +558,37 @@ footer .end .done{padding-left: 15px;}
     .part6 .dd{
         padding: 12px 0px;
         display: grid;
-        grid-template-columns: 2;
+        grid-template-columns: 50% 50%;
         grid-template-rows: 2;
         row-gap: 15px;
     }
     .part6 .dd .dd1{
+        grid-row-start: 1;
+        grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 2;
     }
     .part6 .dd .con1{
+        grid-row-start: 1;
+        grid-row-end: 2;
         grid-column-start: 2;
         grid-column-end: 3;
     }
-    .pp1{padding: 3px 20px;}
-    .pp2{font-size: 14px;padding: 3px 20px;}
-    .pp3{font-size: 14px;padding: 3px 20px;width: 270px;}
+    .part6 .dd .dd2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .part6 .dd .con2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .pp1{padding: 3px 0px;}
+    .pp2{font-size: 14px;padding: 3px 0px;}
+    .pp3{font-size: 14px;padding: 3px 0px;width: 200px !important;}
     footer{
         width: 100%;
         height: auto;
@@ -592,10 +608,26 @@ footer .end .done{padding-left: 15px;}
         grid-template-rows: 2;
     }
     footer .list .list1{
+        grid-row-start: 1;
+        grid-row-end: 2;
         grid-column-start: 1;
         grid-column-end: 2;
     }  
     footer .list .list2{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    footer .list .list3{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    footer .list .list4{
+        grid-row-start: 2;
+        grid-row-end: 3;
         grid-column-start: 2;
         grid-column-end: 3;
     }
@@ -651,6 +683,10 @@ footer .end .done{padding-left: 15px;}
         width: 100%;
         background-color: orange;
         margin-top: 2px;
+    }
+    footer .list ul{
+        padding-right: 3px;
+        font-size: 13px;
     }
 }
 @media screen and (max-width:600px){
