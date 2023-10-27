@@ -42,134 +42,81 @@
     </div>
     <!-- HEADER ENDS -->
     <!-- BANNER STARTS -->
-    <div class="banner" >
+    <section class="banner" >
         <div class="contents">
-        <div class="content1">
-            <p style="font-size: 45px;" class="cp1">"The best place to find<br>
-                &nbsp;&nbsp;the cheapest airfares"</p>
-            <p style="font-size: 36px;padding-top: 6px;" class="cp2">&nbsp;&nbsp;- every single time</p>
+        <div class="content1"><br><br>
+           <p class="heading">"The best place to find <br> the cheapest airfares"</p>
+           <p class="subheading">- every single time</p>
         </div>
         <div class="content2">
-            <table>
-                <tr>
-                   <td colspan="6">
-                    <ul>
-                        <li style="background-color: #f50152 !important;">
-                        <i class="fa-solid fa-plane-departure" style="color: #ffffff;"></i> Flights</li>
-                        <li style="background-color: #4b1d4b;">
-                        <i class="fa-solid fa-hotel" style="color: #ffffff;"></i> Hotels</li>
-                        <li  style="background-color: #4b1d4b ;">
-                        <i class="fa-solid fa-car" style="color: #ffffff;"></i> Cars</li>
-                    </ul>
-                   </td>
-                </tr>
-                <tr>
-                    <form action="">
-                        <td class="input">
-                            <input type="text" placeholder="Enter Origin City" >
-                            <i class="fa-solid fa-link" style="color: #9a9ca2;font-size: smaller;" id="linker"></i>
-                        </td>
-                        <td class="input">
-                            <input type="text" placeholder="Enter Destination City" 
-                            style="width: 204px;" id="in">
-                        </td>
-                        <td class="date1">
-                            <input type="date" placeholder="dd">
-                            <input type="date" placeholder="dd">
-                        </td> 
-                        <td class="purpose1">
-                            <select name="purpose" id="purpose" 
-                            style="color: gray;padding: 13px 13px;
-                            margin-right: 10px;margin-left: 6px;">
-                                <option selected>Passengers </option>
-                                <option value="Educational">1</option>
-                                <option value="Migarte">2</option>
-                                <option value="Proffessional">3</option>
-                                <option value="Medical">4</option>
-                                <option value="Trip">5</option>
-                                <option value="Other">more</option>
+            <form action="">
+                    <div class="switchButton">
+                        <button type="button" class="active">
+                            <i class="fa-solid fa-plane-departure"></i> Flights
+                        </button>
+                        <button type="button">
+                            <i class="fa-solid fa-shop"></i> Hotels
+                        </button>
+                        <button type="button">
+                            <i class="fa-solid fa-car"></i> Cars
+                        </button>
+                    </div>
+                    <div class="searchForm">
+                        <label for="origin-city">Origin City</label>
+                        <input type="text" name="origin-city" id="origin-city" placeholder="Enter Origin City">
+
+                        <span><i class="fa-solid fa-link" style="color:#8daece;font-size: 10px;" id="linker"></i></span>
+
+                        <label for="destination-city">Destination City</label>
+                        <input type="text" name="destination-city" id="destination-city" placeholder="Enter Destination City">
+                        
+                        <label for="trave-start-date">Start Date</label>
+                        <input type="date" name="trave-start-date" id="trave-start-date" placeholder="Enter Start Date">
+                        
+                        <label for="trave-end-date">End Date</label>
+                        <input type="date" name="trave-end-date" id="trave-end-date" placeholder="Enter end Date">
+                        
+                        <label for="select-passenger">Select Passenger</label>
+                        <select name="select-passenger" id="select-passenger" class="passanger">
+                            <option selected>Select Passenger</option>
+                            <option value="1 Pass">1 Passenger</option>
+                            <option value="2 Pass">2 Passengers</option>
+                            <option value="3 Pass">3 Passengers</option>
+                            <option value="4 Pass">4 Passengers</option>
+                            <option value="5 Pass">5 Passenger6</option>
+                            <option value="5 Pass">More</option>
                         </select>
-                        </td>
-                    </form>
-                </tr>
-                <tr>
-                    <td class="date2" >
-                        <input type="date" placeholder="dd">
-                    </td>
-                    <td>
-                        <select name="purpose" id="purpose2" 
-                            style="color: gray;padding: 13px 44px;">
-                                <option selected>Passengers </option>
-                                <option value="Educational">1</option>
-                                <option value="Migarte">2</option>
-                                <option value="Proffessional">3</option>
-                                <option value="Medical">4</option>
-                                <option value="Trip">5</option>
-                                <option value="Other">more</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="date2" >
-                        <input type="date" placeholder="dd">
-                    </td>
-                    <td >
-                        <button type="submit" value="" class="search2"
-                        style="border: 0px;padding: 14px 0px;width: 180px;
-                        color: #363434;">Search</button>
-                    </td>
-                </tr>
-                <tr class="lastrow1">
-                   <td class="un" style="color: #aac1d6 !important;">
-                      <i class="fa-solid fa-rotate" style="color: #ffffff;"></i>&nbsp;&nbsp;Trip type:
-                      <select style="background-color: #5a245a;border: 0px;color: #aac1d6;font-size: 16px;">
-                        <option selected> Return trip</option>
-                        <option selected>One way trip</option>
-                      </select>
-                    </td>
-                   <td class="un" style="color: #aac1d6 !important;">
-                      <i class="fa-solid fa-ticket" style="color: #ffffff;transform: rotate(-45deg);"></i>
-                       &nbsp;Ticket class:
-                       <select style="background-color: #5a245a;border: 0px;color: #aac1d6;font-size: 16px;">
-                            <option selected>Economy</option>
-                            <option>Bussiness</option>
-                            <option>First</option>
-                        </select>
-                   </td>
-                   <td colspan="2" class="un1">&nbsp; &nbsp;&nbsp;
-                    &#9634; Direct Flights Only &nbsp;&nbsp;&nbsp;&nbsp;
-                    &#9634; Include nearly airports
-                    </td>
-                </tr>
-        
-                <tr class="lastrow2">
-                    <td colspan="2">
-                        Trip type :
-                        <select style="background-color: transparent;border: 0px;color: #ffffff;font-size: 15px;">
-                          <option selected> Return trip</option>
-                          <option >One way trip</option>
-                        </select>
-                        Class :
-                        <select style="background-color: transparent;border: 0px;color: #fff;font-size: 15px;">
-                            <option selected>Economy</option>
-                            <option>Bussiness</option>
-                            <option>First</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr class="lastrow2">
-                    <td colspan="2">
-                        Direct Flights Only &#9634; &nbsp;
-                        Include nearly airports &#9634;
-                    </td>
-                </tr>
-            </table>
+                        <span>
+                            <div class="search1"><a href="javascript:void()">Search</a></div>
+                        </span>
+                        
+                        <div class="lastrow">
+                            <div class="trip">
+                                <i class="fa-solid fa-rotate" style="color: #ffffff;" id="tripicon"></i>&nbsp;&nbsp;Trip type:
+                                <select style="background-color: transparent;border: 0px;color: #8daece;font-size: 16px;">
+                                    <option selected> Return trip</option>
+                                    <option selected>One way trip</option>
+                                </select>
+                            </div>
+                            <span class="ticket">
+                                <i class="fa-solid fa-ticket" style="color: #ffffff;transform: rotate(-45deg);" id="tripicon"></i>&nbsp;&nbsp;Ticket class:
+                                <select style="background-color:transparent;border: 0px;color: #8daece;font-size: 16px;">
+                                    <option selected>Economy</option>
+                                    <option>Bussiness</option>
+                                    <option>First</option>
+                                </select>
+                            </span>
+                           <span> &nbsp;&nbsp; Direct Flights Only &nbsp;&nbsp;&#9634;</span>
+                           <span> &nbsp;&nbsp;Include nearly airports &nbsp;&nbsp;&#9634;</span>
+                        </div>
+                    </div>
+            </form>
             <span>
                 <div class="search"><a href="javascript:void()">Search</a></div>
             </span>
         </div>
         </div>
-    </div>
+    </section>
     <!-- BANNER ENDS -->
      <!-- PART2 START -->
 <div class="part2">

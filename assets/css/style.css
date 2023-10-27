@@ -50,70 +50,76 @@ a{
     background-size: 100% 100%;
 }
 .banner .content1{
-    font-size: 50px;
     width: 100%;
     height: 420px;
     padding-left: 170px;
     padding-top: 130px;
 }
-.banner .content1 .slm , h6{
-    color: #131212;
-    font-weight: 100 !important;
+.banner .content1 .heading{
+    font-size: 39px;
 }
-.banner img{
-    width: 100%;
-}
-.banner h6{
-    padding-top: 9px;
+.banner .content1 .subheading{
+    font-size: 27px;
+    padding-top: 6px;
+    font-weight: 600;
 }
 .banner .content2 {
-    width: 960px;
-    background-color: hsl(300, 78%, 18%,0.83);
+    width:999px;
+    background-color: hsl(300, 78%, 18%,0.73);
     padding: 2px 6px;
     padding-bottom: 12px;
-    margin: 0px auto;
+    margin: 0px auto;       
     display: flex;
+    border-radius: 2px;
 }
-
-.banner .content2 ul li:hover{
-    background-color: hsl(340, 99%, 48%) !important;
+.banner .content2:hover {
+    background-color: hsl(300, 78%, 18%,0.8);}
+.content2 form label{display: none;}
+.banner .content2 .switchButton button{
+    border: 0px;
+    color: #fff;
+    width: 110px;
+    padding: 10px 0px;
+    background-color: #421f57;
+    font-size: 16px;
+}
+.banner .content2 .switchButton button:hover{
+    background-color: hsl(340, 99%, 48%) ;
+}
+.banner .content2 .switchButton .active{
+    background-color: hsl(340, 99%, 48%) ;
     cursor: pointer;
  }
-.banner .content2 table tr td input[type="text"]{
-padding: 12px;width: 180px;
-}
-.banner .content2 table tr td input[type="date"]{
-padding: 12px;color: #8b8889;
-}
-.banner .content2 ul{
-    list-style: none;
+ .banner .content2 .searchForm,.switchButton{
+    margin: 3px 0px;
+ }
+ .banner .content2 .lastrow{
+    margin-top: 6px;
+    color: #fff;
     display: flex;
-    color:#fff;
-}
-.banner .content2 ul li{
-   padding: 12px 29px;
-   margin: 4px 0px;
-}
+ }
+ .banner .content2 .lastrow .trip, .ticket{
+    border-bottom: 1px dotted aquamarine;
+    padding-right: 9px;
+ }
+ .banner .content2 .searchForm input{
+    padding: 10px;width: 166px;
+ }
+ .banner .content2 .searchForm .passanger{
+    padding: 12px;width: 166px;
+ }
 .banner .content2 .search{
     background-color: hsl(340, 99%, 48%,0.9) !important;
     border-radius: 50%;
     padding:37px 22px;
-    margin-top: 24px;
     cursor: pointer;
+    margin: 12px;
+    
 }
 .banner .content2 .search:hover{
     background-color: hsl(255, 38%, 49%,0.7) !important;
 }
 .banner .content2 .search a{color: #fff;}
-.un, .un1{
-    padding-top: 6px !important;
-}
-.banner .content2 table tr td{
-    color: #fff;
-}
-.content2 table tr .un{
-    border-bottom: 0.2px dotted !important;
-}
 /* PART2 STARTS */
 .part2{
     background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),
@@ -367,44 +373,69 @@ footer .end .done{padding-left: 15px;}
         color: #fff;
         text-align: center;
     }
-    .banner .content1 .cp1,.cp2{
-        font-size: 34px !important;
-    }
+    
     .banner .content2 {
         margin-top: 30px;
-        width:377px !important ;
+        width:373px ;
         background-color: hsl(300, 78%, 18%,0.5);
         display: flex;
+        padding: 17px;
+        border-radius: 9px;
     }
+    .banner .content2 .searchForm input{
+        padding: 10px;width: 100%;margin: 1px 0px;background-color: hsl(0, 0%, 100%,0.7);
+        border: 0px;border-radius: 2px;
+     }
+     .banner .content2 .searchForm input:hover{
+        background-color: #fff;
+     }
+     .banner .content2 .searchForm input::placeholder{
+        color: #1b1a1a;
+     }
+    .banner .content2 .searchForm .passanger{
+        padding: 10px;width: 100%;margin: 1px 0px;background-color: hsl(0, 0%, 100%,0.7);
+        border: 0px;border-radius: 2px;
+     }
     .banner .content2:hover{
         background-color: hsla(283, 78%, 18%, 0.7);
     }
-    #linker,.date1,.purpose1{
+   #tripicon{display: none;}
+    .banner .content2 form .searchForm .lastrow{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 3px;
+        font-size: 13.7px;
+        margin-top: 6px;
+    }
+    .banner .content2 form .searchForm .lastrow select{
+        font-size: 13.7px !important;
+        margin-top: 6px;
+    }
+    .banner .content2 .lastrow .trip, .ticket{
+        border-bottom: 0px ;
+        padding-right: 3px;
+     }
+    #linker{
         display: none;
     }
-    .date2{
-        display: flex !important;
+    .banner .content2 .search{
+       display: none;
     }
-    #purpose2{
-        display: inline !important;
+    .banner .content2 .search1:hover{
+        background-color: hsl(255, 38%, 49%,0.7) !important;
     }
-    .search2{
-        display: inline !important;
-    }
-    .search2:hover{
-        background: #f50152;
-        color: #fff !important;
-    }
-    .lastrow2{
-       display: inline !important;}
-    .banner .content2 table tr td input{
-        width: 180px !important;
-    }
-    .search,.lastrow1{
-        display: none;
-    }
+    .search1{
+        display: block !important;
+        background-color: hsl(340, 99%, 48%,0.9) !important;
+        border-radius: 2px;
+        padding:10px;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 3px;
+        text-align: center !important;
+            }
     
-    
+    .search1 a{color: #fff;}
     .part2{
         background: linear-gradient(rgba(0, 0, 0, 0.7),rgb(0,0,0,0.1)),url(../img/road2.jpg);
         width: 100%;
@@ -592,13 +623,13 @@ footer .end .done{padding-left: 15px;}
         background:linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),url(../img/departure1.jpeg);
         background-size: 100% 100%;
     }
-    footer .list{
-        padding:30px 6px;
-    }
+ 
     footer .list ul{
         padding-right: 10px;
     }
     footer .list{
+        padding: 30px !important;
+        justify-content: left !important;
         display: grid;
         row-gap: 10px;
         grid-template-columns: 2;
@@ -638,6 +669,7 @@ footer .end .done{padding-left: 15px;}
     footer .end{
         display: block;
         text-align: left;
+        
     }
     footer .end .text .done{
         width: 100%;
@@ -725,4 +757,4 @@ footer .end .done{padding-left: 15px;}
 
 
 .date2,#purpose2,.search2,.part5a{display: none;}
-.lastrow2,.datas1,.marquee,.data2{display: none;}
+.lastrow2,.datas1,.marquee,.data2,.search1{display: none;}
