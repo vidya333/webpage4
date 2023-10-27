@@ -334,7 +334,7 @@ footer .end .done{padding-left: 15px;}
 } 
 
 
-/* RESPONSIVE DIMENTIONS */
+/* RESPONSIVE DIMENTIONS------------------------------------------------------------------------------------------- */
 @media screen and (max-width:991px){
     
     .navbar{
@@ -358,26 +358,23 @@ footer .end .done{padding-left: 15px;}
     }
     .banner{
         background: linear-gradient(hsla(133, 52%, 34%, 0.2),rgba(55, 34, 75, 0.5)),url(../img/banner3.gif);
-        background-size: 100% 100%;
-        
+        background-size: 100% 100%; 
     }
     
     .banner .content1{
-        padding-left: 30px;
-        padding-top: 50px;
         width: 100%;
-        height: 210px;
-        display: block;
+        display: contents;
         color: #fff;
+        text-align: center;
     }
     .banner .content1 .cp1,.cp2{
         font-size: 34px !important;
     }
     .banner .content2 {
-        margin-top: 12px;
+        margin-top: 30px;
         width:377px !important ;
         background-color: hsl(300, 78%, 18%,0.5);
-        display: block;
+        display: flex;
     }
     .banner .content2:hover{
         background-color: hsla(283, 78%, 18%, 0.7);
@@ -406,10 +403,7 @@ footer .end .done{padding-left: 15px;}
     .search,.lastrow1{
         display: none;
     }
-    .banner .content2 {
-       float: left;
-       margin-left: 30px;
-    }
+    
     
     .part2{
         background: linear-gradient(rgba(0, 0, 0, 0.7),rgb(0,0,0,0.1)),url(../img/road2.jpg);
