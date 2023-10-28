@@ -372,29 +372,19 @@ footer .end .done{padding-left: 15px;}
         text-align: center;
         background-color: hsl(0, 0%, 100%,0.6) !important;
     }
-    .banner .content1 .heading{font-size: 27px;}
-    .banner .content1 .subheading{font-size: 21px;font-weight: 500 !important;}
+    .banner .content1 .heading{font-size: 36px;}
+    .banner .content1 .subheading{font-size: 25px;font-weight: 500 !important;}
     .banner .content1 .head{
-        background: linear-gradient(hsl(278, 47%, 23%,0.99),hsl(278, 47%, 23%,0.99)),hsl(278, 47%, 23%,0.6);
         padding: 10px 0px;
         padding-bottom: 20px;
         border-radius: 0px 0px 50px 0px;
         position: relative;
         width: 95%;
+        color: black;
     }
-    .banner .content1 .head::before{
-        content: "";
-        position: absolute;
-        background-color: transparent ;
-        bottom: -50px;
-        left: 0px;
-        height: 50px;
-        width: 26px;
-        border-top-left-radius: 25px;
-        box-shadow: 0 -25px 0 0 hsla(278, 47%, 23%, 0.99);
-    }
+  
     .banner .content2 {
-        margin-top: 52px;
+        margin-top: 25px;
         width:373px ;
         background-color: hsl(300, 78%, 18%,0.5);
         display: flex;
