@@ -84,10 +84,10 @@ a{
     font-size: 16px;
 }
 .banner .content2 .switchButton button:hover{
-    background-color: hsl(340, 99%, 48%) ;
+    background-color: hsla(340, 83%, 47%) ;
 }
 .banner .content2 .switchButton .active{
-    background-color: hsl(340, 99%, 48%) ;
+    background-color: hsla(340, 83%, 47%) ;
     cursor: pointer;
  }
  .banner .content2 .searchForm,.switchButton{
@@ -384,8 +384,8 @@ footer .end .done{padding-left: 15px;}
     }
   
     .banner .content2 {
-        margin-top: 25px;
-        width:373px ;
+        margin-top: 9px !important;
+        width:700px ;
         background-color: hsl(300, 78%, 18%,0.5);
         display: flex;
         padding: 17px;
@@ -394,11 +394,12 @@ footer .end .done{padding-left: 15px;}
     
     .banner .content2 .searchForm input{
         padding: 10px;
-        width: 100%;
-        margin: 1px 0px;
+        width:163px;
+        margin: 3px 0px;
         background-color: hsl(0, 0%, 100%,0.8);
         border: 0px;
         border-radius: 2px;
+        display: inline-flex;
      }
      .banner .content2 .searchForm input:hover{
         background-color: #fff;
@@ -407,8 +408,13 @@ footer .end .done{padding-left: 15px;}
         color: #1b1a1a;
      }
     .banner .content2 .searchForm .passanger{
-        padding: 10px;width: 100%;margin: 1px 0px;background-color: hsl(0, 0%, 100%,0.7);
-        border: 0px;border-radius: 2px;background-color: hsl(0, 0%, 100%,0.8);
+        padding: 10px;
+        width: 99.8%;
+        margin: 0.3px 0px;
+        background-color: hsl(0, 0%, 100%,0.7);
+        border: 0px;
+        border-radius: 2px;
+        background-color: hsl(0, 0%, 100%,0.8);
      }
      .banner .content2 .searchForm .passanger:hover{
         background-color: hsl(0, 0%, 100%) !important;
@@ -416,13 +422,15 @@ footer .end .done{padding-left: 15px;}
     .banner .content2:hover{
         background-color: hsla(283, 78%, 18%, 0.7);
     }
-   #tripicon{display: none;}
+    #tripicon{display: none;}
     .banner .content2 form .searchForm .lastrow{
-        display: grid;
-        grid-template-columns: auto auto;
-        row-gap: 3px;
-        font-size: 13.7px;
+        display: flex;
+        font-size: 14px;
         margin-top: 6px;
+    }
+    .banner .content2 form .searchForm .lastrow .span{
+        margin-top: 9px;
+        margin-left: 6px;
     }
     .banner .content2 form .searchForm .lastrow select{
         font-size: 13.7px !important;
@@ -443,7 +451,7 @@ footer .end .done{padding-left: 15px;}
     }
     .search1{
         display: block !important;
-        background-color: hsl(340, 99%, 48%,0.9) !important;
+        background-color: hsla(340, 83%, 47%) !important;
         border-radius: 2px;
         padding:10px;
         cursor: pointer;
@@ -465,7 +473,8 @@ footer .end .done{padding-left: 15px;}
         grid-template-columns: auto auto auto;
         gap:6px !important;
     }
- .block{margin: 30px 12px 0px 12px !important;}
+    .block{margin: 30px 12px 0px 12px !important;}
+
     .part3{
         width: 100%;
         height: auto;
@@ -476,7 +485,7 @@ footer .end .done{padding-left: 15px;}
     .part3 .data2{
         display: flex;
         justify-content: center;
-        padding: 30px;
+        padding: 13px;
     }
     .part3 .data2 .d{
         font-size: 16px;
@@ -531,7 +540,9 @@ footer .end .done{padding-left: 15px;}
         width: 100% !important;
         cursor: pointer;
         }
-   
+    .part4 .dots{
+        display: block !important;
+        cursor: pointer;}
     .part4 table{
         width: 100%;
         height: auto;
@@ -626,36 +637,8 @@ footer .end .done{padding-left: 15px;}
         padding-right: 10px;
     }
     footer .list{
-        padding: 30px !important;
+        padding: 30px 30px;
         justify-content: left !important;
-        display: grid;
-        row-gap: 10px;
-        grid-template-columns: 2;
-        grid-template-rows: 2;
-    }
-    footer .list .list1{
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }  
-    footer .list .list2{
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-    footer .list .list3{
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    footer .list .list4{
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 3;
     }
     footer .end .text .listend{
        display: block;
@@ -667,7 +650,6 @@ footer .end .done{padding-left: 15px;}
     footer .end{
         display: block;
         text-align: left;
-        
     }
     footer .end .text .done{
         width: 100%;
@@ -676,10 +658,33 @@ footer .end .done{padding-left: 15px;}
     footer .end .text .iconlist{
         margin-left: 0px !important;
         margin: 10px 0px;
+        padding-bottom: 6px;
     }
 }
-
+/* ------------------------------------------------------------------------------------------------------------------- */
 @media screen and (max-width:790px){
+.banner .content2 {
+        margin-top: 25px;
+        width:373px ; 
+    	}
+.banner .content2 .searchForm input{
+        width:100%;
+        display:block;
+     }
+.banner .content2 .searchForm .passanger{
+        padding: 10px;
+        width: 100%;
+     }
+.banner .content2 form .searchForm .lastrow{
+        font-size: 13.5px;
+     }
+.banner .content2 form .searchForm .lastrow{
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 3px;
+        font-size: 13.5px;
+        margin-top: 6px;
+    }
     .part6{
         width:100%;
         height:auto;
@@ -725,6 +730,39 @@ footer .end .done{padding-left: 15px;}
     .pp1{padding: 3px 0px;}
     .pp2{font-size: 15px;padding: 3px 0px;}
     .pp3{font-size: 15px;padding: 3px 0px;width: 200px !important;}
+
+    footer .list{
+        padding: 30px ;
+        justify-content: left !important;
+        display: grid;
+        row-gap: 10px;
+        grid-template-columns: 2;
+        grid-template-rows: 2;
+    }
+    footer .list .list1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }  
+    footer .list .list2{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    footer .list .list3{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    footer .list .list4{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -784,6 +822,8 @@ footer .end .done{padding-left: 15px;}
         padding-right: 3px;
         font-size: 13px;
     }
+    footer .list{
+        padding: 10px ;}
 }
 @media screen and (max-width:450px) {
     footer .list ul{
@@ -808,3 +848,4 @@ footer .end .done{padding-left: 15px;}
 
 .date2,#purpose2,.search2,.part5a{display: none;}
 .lastrow2,.datas1,.marquee,.data2,.search1{display: none;}
+.part4 .dots{display: none;}
