@@ -12,11 +12,11 @@
     <div class="navbar">
         <ul>
             <li><img src="./assets/img/momondo.png" width="110px" class="logo"></li>
-            <li><a href="javascript:void()" class="or">Flights</a></li>
-            <li><a href="javascript:void()">Hotel</a></li>
-            <li><a href="javascript:void()">Car Hire</a></li>
-            <li><a href="javascript:void()">Trip Finder</a></li>
-            <li><a href="javascript:void()">Inspirations</a></li>
+            <li><a href="javascript:void()" class="or"  id="nav">Flights</a></li>
+            <li><a href="javascript:void()" id="nav">Hotel</a></li>
+            <li><a href="javascript:void()" id="nav">Car Hire</a></li>
+            <li><a href="javascript:void()" id="nav">Trip Finder</a></li>
+            <li><a href="javascript:void()" id="nav">Inspirations</a></li>
             <li>
             <ul class="ul2">
                 <li><img src="assets/img/american-flag.jpg" width="30px"></li>
@@ -26,27 +26,16 @@
             </li>
         </ul>
     </div>
-    <div class="topnav">
-       <i class="fa-solid fa-bars" style="color: #fff;font-size: large;float:right;padding: 15px;"></i>
-       <ul class="dropdown" style="float: right;list-style: none;">
-        <li><img src="./assets/img/momondo.png" width="130px"style="padding: 0px;"></li>
-        <li><a href="/" style="color: orangered;background: #161638;padding: 15px 47px;"> Flights</a></li>
-        <li><a href="/" style="padding: 15px 52px;background: #161638;color: #fff;">Hotel</a></li>
-        <li><a href="/" style="padding: 15px 42px;background: #161638;color: #fff;">Car Hire</a></li>
-        <li><a href="/" style="padding: 15px 33px;background: #161638;color: #fff;">Trip Finder</a></li>
-        <li><a href="/" style="padding: 15px 33.5px;background: #161638;color: #fff;">Inspiration</a></li>
-        <li><a href="/" style="padding: 15px 10px;background: #161638;color: #fff;">
-            <img src="assets/img/american-flag.jpg" width="25px"> English(GBP)</a></li>
-        <li><a href="/" style="padding: 15px 49px;color: #7ee740;background: #161638;"><b>Log In</b></a></li>
-      </ul>
-    </div>
+    
     <!-- HEADER ENDS -->
     <!-- BANNER STARTS -->
     <section class="banner" >
         <div class="contents">
-        <div class="content1"><br><br>
-           <p class="heading">"The best place to find <br> the cheapest airfares"</p>
+        <div class="content1">
+           <div class="head">
+            <p class="heading">"The best place to find <br> the cheapest airfares"</p>
            <p class="subheading">- every single time</p>
+           </div>
         </div>
         <div class="content2">
             <form action="">
@@ -327,8 +316,9 @@
             <p class="q1"> GET A QUICK ESTIMATE!</p>
             <p class="q2">GET A PROFESSIONAL HELP
             </p>
-            
+            <hr width="200px" style="margin: 0px auto;">
          </div>
+         
          <table class="table2" >
             <tr>
                 <td><select name="purpose" id="purpose" 

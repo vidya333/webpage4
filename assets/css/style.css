@@ -34,7 +34,7 @@ a{
     padding-top: 12px;
 }
 .ul2{
-    padding-left: 140px !important;
+    padding-left: 140px ;
     cursor: pointer;
 }
 .ul2 img{
@@ -342,25 +342,23 @@ footer .end .done{padding-left: 15px;}
 
 /* RESPONSIVE DIMENTIONS------------------------------------------------------------------------------------------- */
 @media screen and (max-width:991px){
-    
-    .navbar{
+    .navbar {
+        font-size: 15px;    }
+    .navbar #nav{
         display: none;
     }
-    .topnav {
-        display: block;
-        height: 50px;
-        background-color: #161638;
-        width: 100%;
-        line-height: 50px;
+    .navbar ul{
+        margin-left: 10px;
     }
-    .dropdown{
-        display: none;
+    .navbar ul li{
+        margin: 0px auto;
     }
-    .topnav:hover .dropdown{
-        display: block !important;   
+    .ul2{
+      float: inline-end !important;
+      padding-left: 0px;
     }
-    .topnav .dropdown li a:hover{
-        background: #654dad !important;
+    .ul2 li{
+        padding-left: 10px;
     }
     .banner{
         background: linear-gradient(hsla(133, 52%, 34%, 0.2),rgba(55, 34, 75, 0.5)),url(../img/banner3.gif);
@@ -372,19 +370,44 @@ footer .end .done{padding-left: 15px;}
         display: contents;
         color: #fff;
         text-align: center;
+        background-color: hsl(0, 0%, 100%,0.6) !important;
     }
-    
+    .banner .content1 .heading{font-size: 27px;}
+    .banner .content1 .subheading{font-size: 21px;font-weight: 500 !important;}
+    .banner .content1 .head{
+        background: linear-gradient(hsl(278, 47%, 23%,0.0),hsl(278, 47%, 23%,0.99)),hsl(278, 47%, 23%,0.6);
+        padding: 10px 0px;
+        padding-bottom: 20px;
+        border-radius: 0px 0px 50px 0px;
+        position: relative;
+    }
+    .banner .content1 .head::before{
+        content: "";
+        position: absolute;
+        background-color: transparent ;
+        bottom: -50px;
+        left: 0px;
+        height: 50px;
+        width: 26px;
+        border-top-left-radius: 25px;
+        box-shadow: 0 -25px 0 0 hsla(278, 47%, 23%, 0.9);
+    }
     .banner .content2 {
         margin-top: 30px;
         width:373px ;
         background-color: hsl(300, 78%, 18%,0.5);
         display: flex;
         padding: 17px;
-        border-radius: 9px;
+        border-radius: 25px 6px 6px 6px;
     }
+    
     .banner .content2 .searchForm input{
-        padding: 10px;width: 100%;margin: 1px 0px;background-color: hsl(0, 0%, 100%,0.7);
-        border: 0px;border-radius: 2px;
+        padding: 10px;
+        width: 100%;
+        margin: 1px 0px;
+        background-color: hsl(0, 0%, 100%,0.8);
+        border: 0px;
+        border-radius: 2px;
      }
      .banner .content2 .searchForm input:hover{
         background-color: #fff;
@@ -394,7 +417,10 @@ footer .end .done{padding-left: 15px;}
      }
     .banner .content2 .searchForm .passanger{
         padding: 10px;width: 100%;margin: 1px 0px;background-color: hsl(0, 0%, 100%,0.7);
-        border: 0px;border-radius: 2px;
+        border: 0px;border-radius: 2px;background-color: hsl(0, 0%, 100%,0.8);
+     }
+     .banner .content2 .searchForm .passanger:hover{
+        background-color: hsl(0, 0%, 100%) !important;
      }
     .banner .content2:hover{
         background-color: hsla(283, 78%, 18%, 0.7);
@@ -545,8 +571,10 @@ footer .end .done{padding-left: 15px;}
         color: #fff;
         font-size: 19px;
         letter-spacing: 1px;
-        padding: 24px 0px;
-        
+        padding: 24px 0px;   
+    }
+    .part5a .container .q2{
+        padding-bottom: 12px;
     }
     .part5a table{
         width: 100%;
@@ -557,9 +585,14 @@ footer .end .done{padding-left: 15px;}
         width: 60%;
         border:none;
         margin:3px 0px;
+        border-radius: 3px ;   
+    }
+    .part5a table td input::placeholder{
+        padding-left: 20px;
     }
     .part5a table td select{
         width: 60% !important;
+        border-radius: 3px ;   
     }
     .part5a table td button{
         padding: 12px 0px;
@@ -567,56 +600,30 @@ footer .end .done{padding-left: 15px;}
         width: 60%;
         background-color: orange;
         margin-top: 2px;
+        border-radius: 3px ;   
     }
     .part5a table td button:hover{
        cursor: pointer; 
        color: #fff;  }
-    .part6{
-        width:100%;
-        height:auto;
-        padding: 30px 10px !important;
-       }
-    .part6 .b1{text-align: center;}
     .part6 .b2{
         padding: 10px 0px !important;
-        text-align: center;}
-    .part6 .dd{
-        padding: 12px 0px;
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 2;
-        gap: 15px;
-    }
-    .part6 hr {
-        margin: 6px 0px !important;
-    }
-    .part6 .dd .dd1{
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    .part6 .dd .con1{
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-    .part6 .dd .dd2{
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    .part6 .dd .con2{
-        grid-row-start: 2;
-        grid-row-end: 3;
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
+        margin: 0px auto;      
+        width: 86%;}
+    .part6 .con1,.con2{padding-left: 9px;}
     .pp1{padding: 3px 0px;}
-    .pp2{font-size: 14px;padding: 3px 0px;}
-    .pp3{font-size: 14px;padding: 3px 0px;width: 200px !important;}
+    .pp2{
+        font-size: 15px;
+        padding: 3px 0px;}
+    .pp3{
+        font-size: 15px;
+        padding: 3px 0px;
+        width: 200px !important;}
+    .part6 .dd .dd1 img{
+        width: 180px !important;
+        height: 170px !important;}
+    .part6 .dd .dd2 img{
+        width: 180px !important;
+        height: 170px !important;}
     footer{
         width: 100%;
         height: auto;
@@ -681,7 +688,53 @@ footer .end .done{padding-left: 15px;}
     }
 }
 
-
+@media screen and (max-width:790px){
+    .part6{
+        width:100%;
+        height:auto;
+        padding: 30px 10px !important;
+       }
+    .part6 .b1{text-align: center;}
+  
+    .part6 .dd{
+        padding: 12px 0px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 2;
+        gap: 15px;
+    }
+    .part6 hr {
+        margin: 6px 0px !important;
+    }
+    .part6 .dd .dd1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .part6 .dd .con1{
+        
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .part6 .dd .dd2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .part6 .dd .con2{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .pp1{padding: 3px 0px;}
+    .pp2{font-size: 15px;padding: 3px 0px;}
+    .pp3{font-size: 15px;padding: 3px 0px;width: 200px !important;}
+}
 
 @media screen and (max-width:600px){
 
@@ -741,12 +794,18 @@ footer .end .done{padding-left: 15px;}
         font-size: 13px;
     }
 }
+@media screen and (max-width:450px) {
+    footer .list ul{
+        padding-right: 2px;
+        font-size: 12.5px;
+    }
+    
+}
 @media screen and (max-width:460px) {
     .part3 .d1{
         font-size: 14.5px !important;
     }
-    .part6 .dd .dd1 img{width: 180px !important;height: 170px !important;}
-    .part6 .dd .dd2 img{width: 180px !important;height: 170px !important;}
+    
 
 }
 @media screen and (max-width:394px) {
